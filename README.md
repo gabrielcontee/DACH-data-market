@@ -9,10 +9,12 @@
 
 </div>
 
-A weekday snapshot of job postings in Germany, Austria and Switzerland that
-fit one CV: senior iOS, Kotlin/Spring Boot backend, and AI roles. Each
-posting gets a 0-100 fit score, and the postings table opens on Vienna plus
-anything that mentions remote.
+A weekday snapshot of job postings in Austria that fit one CV: senior iOS,
+Kotlin/Spring Boot backend, and AI roles. Germany and Switzerland are
+switched off for now to save API calls; set `ADZUNA_COUNTRIES` to
+`at,de,ch` in `.github/workflows/refresh.yml` to search them again. Each
+posting gets a 0-100 fit score, and the postings table opens on Vienna,
+adverts with no city, and anything that mentions remote.
 
 Forked from [Christoph Ruckensteiner's DACH data job market tracker](https://github.com/Chrisinho8/DACH-data-job-market),
 which tracks data and AI roles on a Databricks pipeline. This fork keeps his
@@ -47,7 +49,7 @@ the rest **partial**. Every weight is a constant in that file.
 ## How it runs
 
 ```
-Adzuna API        de · at · ch, 16 searches, ~100 calls a run
+Adzuna API        at (de, ch optional), 16 searches, at most 100 calls
     │
     ▼
 src/adzuna.py     sorted newest first, cached per day under raw/

@@ -20,7 +20,25 @@ import time
 import requests
 
 BASE = "https://api.adzuna.com/v1/api/jobs"
-COUNTRIES = ["at", "de", "ch"]          # Austria first: Vienna is the target
+
+# Austria only for now: every search costs at least one call per country,
+# and Germany is where the extra pages go. To search Germany and
+# Switzerland again, set ADZUNA_COUNTRIES="at,de,ch" in refresh.yml.
+ALL_COUNTRIES = ("at", "de", "ch")
+DEFAULT_COUNTRIES = "at"
+
+
+def countries_from_env():
+    raw = os.environ.get("ADZUNA_COUNTRIES", DEFAULT_COUNTRIES)
+    out = [c.strip().lower() for c in raw.split(",") if c.strip()]
+    bad = [c for c in out if c not in ALL_COUNTRIES]
+    if bad or not out:
+        raise SystemExit(f"ADZUNA_COUNTRIES must be a comma-separated subset "
+                         f"of {','.join(ALL_COUNTRIES)}, got {raw!r}")
+    return out
+
+
+COUNTRIES = countries_from_env()
 PER_PAGE = 50
 RETRY_STATUS = {429, 500, 502, 503, 504}
 RETRIES = 6

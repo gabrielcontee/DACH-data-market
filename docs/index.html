@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DACH Job Search · iOS, Kotlin/Spring and AI roles</title>
 <meta name="description"
-      content="Daily job search across Germany, Austria and Switzerland
-               for senior iOS, Kotlin/Spring Boot backend and AI roles,
+      content="Weekday job search in Austria for senior iOS,
+               Kotlin/Spring Boot backend and AI roles,
                scored against one CV. Forked from Christoph
                Ruckensteiner's DACH data job market tracker.">
 <link rel="canonical" href="https://gabrielcontee.github.io/DACH-data-market/">
@@ -14,7 +14,7 @@
       content="DACH Job Search: iOS, Kotlin/Spring and AI roles">
 <meta property="og:description"
       content="Senior iOS, Kotlin/Spring Boot backend and AI job postings
-               in Germany, Austria and Switzerland, scored for CV fit.">
+               in Austria, scored for CV fit.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://gabrielcontee.github.io/DACH-data-market/">
 <meta name="robots" content="noindex">
@@ -549,13 +549,15 @@
            width="86" height="107" loading="eager"
            onerror="this.remove()">
       <h1>iOS, Kotlin/Spring and AI jobs
-          in the DACH region, scored for CV fit</h1>
+          in Austria, scored for CV fit</h1>
     </div>
     <p class="sub">
       Every weekday morning a GitHub Action pulls senior iOS, Kotlin/Spring
-      Boot and AI postings for Germany, Austria and Switzerland from the
-      Adzuna API, classifies them by title and scores each one against the
-      CV. The table opens on Vienna plus anything that mentions remote.
+      Boot and AI postings in Austria from the Adzuna API, classifies them
+      by title and scores each one against the CV. The table opens on
+      Vienna, adverts with no city, and anything that mentions remote.
+      Germany and Switzerland
+      are switched off for now to save API calls.
     </p>
     <p class="byline">
       Forked from <a href="https://github.com/Chrisinho8/DACH-data-job-market"
@@ -594,7 +596,7 @@
 
       
   <section>
-    <h2>Main overview for Germany, Austria and Switzerland</h2>
+    <h2>Overview by country</h2>
     <p class="note">
     </p>
     <div id="ctrycards" class="ctry"></div>
@@ -625,7 +627,7 @@
       <div>
         <div class="map-plot">
           <svg id="map" viewBox="0 0 600 727" role="img"
-               aria-label="Map of live postings by place in Germany, Austria and Switzerland"
+               aria-label="Map of live postings by place"
                xmlns="http://www.w3.org/2000/svg"></svg>
         </div>
         <div class="legend" id="leg-bubbles">
@@ -699,7 +701,7 @@
              placeholder="Search title, employer or skill…"
              aria-label="Search postings by title, employer or skill">
       <select id="pwhere" aria-label="Filter by place and work mode">
-        <option value="vienna+remote" selected>Vienna or remote</option>
+        <option value="vienna+remote" selected>Vienna, remote or no city</option>
         <option value="vienna">Vienna only</option>
         <option value="austria">Austria</option>
         <option value="remote">Mentions remote</option>
@@ -1055,8 +1057,11 @@
       <li><strong>The fit score is a first sort, not a verdict.</strong>
           It cannot see requirements past the first paragraph, so a
           German C1 or SQL requirement further down goes unflagged.</li>
+      <li><strong>Austria only, for now.</strong> Germany and
+          Switzerland are not searched, to save API calls; remote roles
+          based there do not show up.</li>
       <li><strong>Searches are capped to fit the free API quota.</strong>
-          About 100 calls per weekday run; big searches keep only their
+          At most 100 calls per weekday run; big searches keep only their
           newest postings, and the run's meta.json lists which.</li>
       <li><strong>The AI numbers are a floor, not a total.</strong>
           Titles that say only "AI" or "KI" without naming a role are
@@ -1103,7 +1108,7 @@
 
 <div id="maptip" role="tooltip"></div>
 
-<script src="app.js?v=33"></script>
+<script src="app.js?v=34"></script>
 
 
 

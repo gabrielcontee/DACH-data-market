@@ -54,6 +54,8 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           ADZUNA_MAX_CALLS: "100"
+          # Austria only, to save calls. "at,de,ch" searches all three.
+          ADZUNA_COUNTRIES: "at"
         run: python src/pipeline.py
 
       - name: Commit the new data

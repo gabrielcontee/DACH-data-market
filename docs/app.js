@@ -594,7 +594,7 @@ get("meta").then(m => {
      pipeline; an older meta.json falls back to the original cards. */
   const cards = has("fit_strong") ? [
     [CORAL, nf0(m.live_postings), "Live postings",
-     `${nf0(m.employers)} employers in DE, AT and CH`],
+     `from ${nf0(m.employers)} employers`],
     [SAGE, nf0(m.fit_strong), "Strong CV fit",
      `${nf0(m.fit_partial)} partial · ${nf0(m.fit_ai)} AI roles`],
     [STEEL, nf0(m.vienna), "In Vienna",
@@ -1878,8 +1878,12 @@ function pFill(sel, values, allLabel, label) {
    20% premium). work_mode comes from the title and the first ~500
    characters of the advert, so "" means "not stated", not "on site". */
 const isVienna = r => r.country === "at" && r.city === "wien";
+/* Adzuna gives about a third of Austrian adverts no city ("unknown").
+   They may well be in Vienna, so the default view keeps them. */
+const noCityAT = r => r.country === "at" && (!r.city || r.city === "unknown");
 function inWhere(r, where) {
-  if (where === "vienna+remote") return isVienna(r) || r.work_mode === "remote";
+  if (where === "vienna+remote")
+    return isVienna(r) || noCityAT(r) || r.work_mode === "remote";
   if (where === "vienna") return isVienna(r);
   if (where === "austria") return r.country === "at";
   if (where === "remote") return r.work_mode === "remote";
