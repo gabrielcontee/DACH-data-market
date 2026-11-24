@@ -2,1080 +2,456 @@
  {
   "country": "de",
   "city": "unknown",
-  "n_postings": 613,
-  "avg_age_days": 49.2,
-  "pct_english": 37.0,
-  "pct_agency": 2.3
+  "n_postings": 160,
+  "avg_age_days": 37.4,
+  "pct_english": 28.1,
+  "pct_agency": 3.8
  },
  {
   "country": "de",
   "city": "berlin",
-  "n_postings": 397,
-  "avg_age_days": 51.7,
-  "pct_english": 53.1,
-  "pct_agency": 2.3
+  "n_postings": 123,
+  "avg_age_days": 34.0,
+  "pct_english": 53.7,
+  "pct_agency": 6.5
  },
  {
   "country": "de",
   "city": "muenchen",
-  "n_postings": 315,
-  "avg_age_days": 53.0,
-  "pct_english": 48.3,
-  "pct_agency": 6.0
+  "n_postings": 88,
+  "avg_age_days": 35.8,
+  "pct_english": 44.3,
+  "pct_agency": 12.5
  },
  {
   "country": "de",
   "city": "hamburg",
-  "n_postings": 194,
-  "avg_age_days": 58.6,
-  "pct_english": 21.1,
-  "pct_agency": 5.7
- },
- {
-  "country": "de",
-  "city": "frankfurt",
-  "n_postings": 147,
-  "avg_age_days": 67.2,
-  "pct_english": 8.8,
-  "pct_agency": 2.7
- },
- {
-  "country": "de",
-  "city": "koeln",
-  "n_postings": 135,
-  "avg_age_days": 68.8,
-  "pct_english": 16.3,
-  "pct_agency": 3.7
- },
- {
-  "country": "ch",
-  "city": "unknown",
-  "n_postings": 132,
-  "avg_age_days": 43.4,
-  "pct_english": 87.1,
-  "pct_agency": 0.8
+  "n_postings": 74,
+  "avg_age_days": 19.5,
+  "pct_english": 9.5,
+  "pct_agency": 8.1
  },
  {
   "country": "ch",
   "city": "zuerich",
-  "n_postings": 110,
-  "avg_age_days": 26.9,
-  "pct_english": 55.5,
-  "pct_agency": 5.5
+  "n_postings": 65,
+  "avg_age_days": 14.3,
+  "pct_english": 40.0,
+  "pct_agency": 6.2
+ },
+ {
+  "country": "ch",
+  "city": "unknown",
+  "n_postings": 62,
+  "avg_age_days": 52.1,
+  "pct_english": 75.8,
+  "pct_agency": 1.6
+ },
+ {
+  "country": "de",
+  "city": "koeln",
+  "n_postings": 52,
+  "avg_age_days": 32.4,
+  "pct_english": 17.3,
+  "pct_agency": 5.8
  },
  {
   "country": "at",
   "city": "wien",
-  "n_postings": 85,
-  "avg_age_days": 59.2,
-  "pct_english": 52.9,
-  "pct_agency": 9.4
+  "n_postings": 47,
+  "avg_age_days": 82.1,
+  "pct_english": 44.7,
+  "pct_agency": 6.4
  },
  {
   "country": "de",
-  "city": "stuttgart",
-  "n_postings": 72,
-  "avg_age_days": 33.9,
-  "pct_english": 11.1,
-  "pct_agency": 8.3
- },
- {
-  "country": "de",
-  "city": "duesseldorf",
-  "n_postings": 58,
-  "avg_age_days": 35.8,
-  "pct_english": 10.3,
-  "pct_agency": 3.4
- },
- {
-  "country": "de",
-  "city": "karlsruhe",
-  "n_postings": 56,
-  "avg_age_days": 52.7,
-  "pct_english": 14.3,
-  "pct_agency": 5.4
+  "city": "frankfurt",
+  "n_postings": 47,
+  "avg_age_days": 20.5,
+  "pct_english": 4.3,
+  "pct_agency": 8.5
  },
  {
   "country": "at",
   "city": "unknown",
-  "n_postings": 52,
-  "avg_age_days": 51.1,
-  "pct_english": 38.5,
+  "n_postings": 33,
+  "avg_age_days": 66.4,
+  "pct_english": 63.6,
   "pct_agency": 0.0
  },
  {
-  "country": "ch",
-  "city": "kanton genf",
-  "n_postings": 39,
-  "avg_age_days": 51.2,
-  "pct_english": 79.5,
-  "pct_agency": 2.6
- },
- {
   "country": "de",
-  "city": "muenster",
-  "n_postings": 36,
-  "avg_age_days": 138.4,
-  "pct_english": 5.6,
-  "pct_agency": 2.8
- },
- {
-  "country": "de",
-  "city": "nuernberg",
-  "n_postings": 35,
-  "avg_age_days": 56.8,
-  "pct_english": 0.0,
-  "pct_agency": 8.6
- },
- {
-  "country": "de",
-  "city": "essen",
-  "n_postings": 34,
-  "avg_age_days": 43.6,
-  "pct_english": 8.8,
-  "pct_agency": 2.9
- },
- {
-  "country": "de",
-  "city": "hannover",
-  "n_postings": 33,
-  "avg_age_days": 35.2,
-  "pct_english": 6.1,
-  "pct_agency": 6.1
- },
- {
-  "country": "de",
-  "city": "dresden",
-  "n_postings": 30,
-  "avg_age_days": 34.2,
-  "pct_english": 6.7,
-  "pct_agency": 3.3
- },
- {
-  "country": "de",
-  "city": "leipzig",
-  "n_postings": 30,
-  "avg_age_days": 41.6,
-  "pct_english": 6.7,
-  "pct_agency": 6.7
- },
- {
-  "country": "de",
-  "city": "dortmund",
-  "n_postings": 30,
-  "avg_age_days": 25.4,
-  "pct_english": 10.0,
-  "pct_agency": 3.3
+  "city": "stuttgart",
+  "n_postings": 29,
+  "avg_age_days": 25.7,
+  "pct_english": 3.4,
+  "pct_agency": 10.3
  },
  {
   "country": "ch",
   "city": "bern",
   "n_postings": 27,
-  "avg_age_days": 13.8,
-  "pct_english": 33.3,
-  "pct_agency": 11.1
+  "avg_age_days": 22.4,
+  "pct_english": 11.1,
+  "pct_agency": 3.7
  },
  {
   "country": "de",
-  "city": "bonn",
+  "city": "hannover",
   "n_postings": 26,
-  "avg_age_days": 63.8,
-  "pct_english": 11.5,
-  "pct_agency": 23.1
+  "avg_age_days": 8.7,
+  "pct_english": 0.0,
+  "pct_agency": 3.8
  },
  {
   "country": "de",
-  "city": "heidelberg",
-  "n_postings": 25,
-  "avg_age_days": 44.1,
-  "pct_english": 36.0,
+  "city": "karlsruhe",
+  "n_postings": 20,
+  "avg_age_days": 54.5,
+  "pct_english": 10.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "duesseldorf",
+  "n_postings": 15,
+  "avg_age_days": 32.2,
+  "pct_english": 0.0,
+  "pct_agency": 6.7
+ },
+ {
+  "country": "de",
+  "city": "bremen",
+  "n_postings": 14,
+  "avg_age_days": 29.6,
+  "pct_english": 7.1,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "essen",
+  "n_postings": 13,
+  "avg_age_days": 15.5,
+  "pct_english": 7.7,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "muenster",
+  "n_postings": 13,
+  "avg_age_days": 11.2,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "dortmund",
+  "n_postings": 12,
+  "avg_age_days": 7.6,
+  "pct_english": 0.0,
+  "pct_agency": 8.3
+ },
+ {
+  "country": "de",
+  "city": "nuernberg",
+  "n_postings": 11,
+  "avg_age_days": 39.1,
+  "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
   "city": "ulm",
-  "n_postings": 25,
-  "avg_age_days": 29.8,
-  "pct_english": 4.0,
-  "pct_agency": 16.0
- },
- {
-  "country": "de",
-  "city": "braunschweig",
-  "n_postings": 19,
-  "avg_age_days": 220.2,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "genf",
-  "n_postings": 19,
-  "avg_age_days": 25.7,
-  "pct_english": 94.7,
-  "pct_agency": 5.3
- },
- {
-  "country": "de",
-  "city": "bremen",
-  "n_postings": 18,
-  "avg_age_days": 70.3,
-  "pct_english": 5.6,
-  "pct_agency": 5.6
- },
- {
-  "country": "de",
-  "city": "augsburg",
-  "n_postings": 18,
-  "avg_age_days": 42.7,
-  "pct_english": 11.1,
-  "pct_agency": 5.6
- },
- {
-  "country": "ch",
-  "city": "lausanne",
-  "n_postings": 17,
-  "avg_age_days": 12.2,
-  "pct_english": 94.1,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "basel",
-  "n_postings": 16,
-  "avg_age_days": 11.8,
-  "pct_english": 81.3,
-  "pct_agency": 18.8
- },
- {
-  "country": "ch",
-  "city": "luzern",
-  "n_postings": 15,
-  "avg_age_days": 12.7,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "aachen",
-  "n_postings": 15,
-  "avg_age_days": 37.7,
-  "pct_english": 20.0,
-  "pct_agency": 13.3
- },
- {
-  "country": "de",
-  "city": "mannheim",
-  "n_postings": 15,
-  "avg_age_days": 35.9,
-  "pct_english": 6.7,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "wiesbaden",
-  "n_postings": 14,
-  "avg_age_days": 14.4,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "guetersloh",
-  "n_postings": 14,
-  "avg_age_days": 23.4,
-  "pct_english": 14.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "ostalbkreis",
-  "n_postings": 14,
-  "avg_age_days": 58.3,
-  "pct_english": 14.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "kiel",
-  "n_postings": 13,
-  "avg_age_days": 40.6,
-  "pct_english": 0.0,
-  "pct_agency": 7.7
- },
- {
-  "country": "de",
-  "city": "main-taunus-kreis",
-  "n_postings": 12,
-  "avg_age_days": 59.8,
-  "pct_english": 16.7,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "heilbronn",
-  "n_postings": 12,
-  "avg_age_days": 40.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "dietikon",
-  "n_postings": 12,
-  "avg_age_days": 56.3,
-  "pct_english": 83.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "oldenburg",
   "n_postings": 11,
-  "avg_age_days": 20.7,
-  "pct_english": 0.0,
-  "pct_agency": 36.4
- },
- {
-  "country": "de",
-  "city": "coburg",
-  "n_postings": 11,
-  "avg_age_days": 72.2,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "koblenz",
-  "n_postings": 11,
-  "avg_age_days": 41.0,
-  "pct_english": 0.0,
+  "avg_age_days": 19.7,
+  "pct_english": 9.1,
   "pct_agency": 18.2
  },
  {
   "country": "de",
-  "city": "paderborn",
+  "city": "bonn",
   "n_postings": 10,
-  "avg_age_days": 34.8,
+  "avg_age_days": 92.5,
   "pct_english": 0.0,
-  "pct_agency": 10.0
+  "pct_agency": 30.0
  },
  {
   "country": "de",
-  "city": "reutlingen",
+  "city": "dresden",
   "n_postings": 10,
-  "avg_age_days": 111.7,
-  "pct_english": 50.0,
-  "pct_agency": 0.0
+  "avg_age_days": 26.3,
+  "pct_english": 20.0,
+  "pct_agency": 20.0
  },
  {
-  "country": "de",
-  "city": "freiburg",
+  "country": "ch",
+  "city": "kanton genf",
   "n_postings": 9,
-  "avg_age_days": 18.3,
-  "pct_english": 11.1,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "rhein-kreis neuss",
-  "n_postings": 9,
-  "avg_age_days": 29.0,
-  "pct_english": 11.1,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "rosenheim",
-  "n_postings": 9,
-  "avg_age_days": 34.3,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "starnberg",
-  "n_postings": 9,
-  "avg_age_days": 34.8,
-  "pct_english": 44.4,
-  "pct_agency": 22.2
+  "avg_age_days": 53.6,
+  "pct_english": 100.0,
+  "pct_agency": 11.1
  },
  {
   "country": "de",
   "city": "darmstadt",
   "n_postings": 9,
-  "avg_age_days": 71.9,
-  "pct_english": 33.3,
+  "avg_age_days": 88.1,
+  "pct_english": 22.2,
   "pct_agency": 0.0
  },
  {
   "country": "ch",
-  "city": "buelach",
+  "city": "baden",
   "n_postings": 9,
-  "avg_age_days": 19.6,
-  "pct_english": 33.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "rhein-erft-kreis",
-  "n_postings": 8,
-  "avg_age_days": 21.5,
+  "avg_age_days": 10.1,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "kaiserslautern",
+  "city": "mannheim",
   "n_postings": 8,
-  "avg_age_days": 9.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "biberach",
-  "n_postings": 8,
-  "avg_age_days": 18.5,
+  "avg_age_days": 35.6,
   "pct_english": 0.0,
   "pct_agency": 12.5
  },
  {
   "country": "de",
-  "city": "mettmann",
-  "n_postings": 8,
-  "avg_age_days": 66.4,
-  "pct_english": 12.5,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "gross-gerau",
-  "n_postings": 8,
-  "avg_age_days": 22.4,
+  "city": "leipzig",
+  "n_postings": 7,
+  "avg_age_days": 65.3,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "rostock",
-  "n_postings": 8,
-  "avg_age_days": 19.6,
-  "pct_english": 25.0,
-  "pct_agency": 12.5
- },
- {
-  "country": "ch",
-  "city": "nyon",
-  "n_postings": 8,
-  "avg_age_days": 9.3,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "bautzen",
+  "city": "heilbronn",
   "n_postings": 7,
-  "avg_age_days": 22.7,
+  "avg_age_days": 38.7,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "ch",
-  "city": "dielsdorf",
+  "city": "luzern",
   "n_postings": 7,
-  "avg_age_days": 6.3,
-  "pct_english": 14.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "kleve",
-  "n_postings": 7,
-  "avg_age_days": 68.4,
+  "avg_age_days": 7.9,
   "pct_english": 0.0,
-  "pct_agency": 42.9
- },
- {
-  "country": "at",
-  "city": "graz",
-  "n_postings": 7,
-  "avg_age_days": 20.3,
-  "pct_english": 28.6,
-  "pct_agency": 28.6
- },
- {
-  "country": "ch",
-  "city": "thun",
-  "n_postings": 7,
-  "avg_age_days": 51.9,
-  "pct_english": 14.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "ouest lausannois",
-  "n_postings": 6,
-  "avg_age_days": 18.8,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "saarbruecken",
-  "n_postings": 6,
-  "avg_age_days": 7.8,
-  "pct_english": 0.0,
-  "pct_agency": 16.7
- },
- {
-  "country": "de",
-  "city": "boeblingen",
-  "n_postings": 6,
-  "avg_age_days": 28.3,
-  "pct_english": 83.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "baden-baden",
-  "n_postings": 6,
-  "avg_age_days": 11.3,
-  "pct_english": 83.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "bochum",
-  "n_postings": 6,
-  "avg_age_days": 69.7,
-  "pct_english": 16.7,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "borken",
-  "n_postings": 6,
-  "avg_age_days": 66.2,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "zug",
-  "n_postings": 6,
-  "avg_age_days": 44.0,
-  "pct_english": 33.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "duisburg",
-  "n_postings": 6,
-  "avg_age_days": 55.7,
-  "pct_english": 33.3,
   "pct_agency": 0.0
  },
  {
   "country": "de",
   "city": "jena",
   "n_postings": 6,
-  "avg_age_days": 20.7,
+  "avg_age_days": 102.5,
   "pct_english": 0.0,
-  "pct_agency": 16.7
- },
- {
-  "country": "de",
-  "city": "konstanz",
-  "n_postings": 6,
-  "avg_age_days": 16.5,
-  "pct_english": 50.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "innsbruck",
-  "n_postings": 6,
-  "avg_age_days": 67.7,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "siegen-wittgenstein",
-  "n_postings": 5,
-  "avg_age_days": 7.6,
-  "pct_english": 0.0,
-  "pct_agency": 20.0
- },
- {
-  "country": "de",
-  "city": "pinneberg",
-  "n_postings": 5,
-  "avg_age_days": 140.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "baden",
-  "n_postings": 5,
-  "avg_age_days": 13.8,
-  "pct_english": 20.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "bodenseekreis",
-  "n_postings": 5,
-  "avg_age_days": 93.2,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "erfurt",
-  "n_postings": 5,
-  "avg_age_days": 23.8,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "tuebingen",
-  "n_postings": 5,
-  "avg_age_days": 14.0,
-  "pct_english": 20.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "ravensburg",
-  "n_postings": 5,
-  "avg_age_days": 25.4,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "bielefeld",
-  "n_postings": 5,
-  "avg_age_days": 12.8,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "muehldorf am inn",
-  "n_postings": 5,
-  "avg_age_days": 70.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "offenbach",
-  "n_postings": 5,
-  "avg_age_days": 29.8,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "kassel",
-  "n_postings": 5,
-  "avg_age_days": 51.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "monthey",
-  "n_postings": 5,
-  "avg_age_days": 10.8,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "wuppertal",
-  "n_postings": 5,
-  "avg_age_days": 46.6,
-  "pct_english": 40.0,
-  "pct_agency": 20.0
- },
- {
-  "country": "de",
-  "city": "stade",
-  "n_postings": 5,
-  "avg_age_days": 34.4,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "osnabrueck",
-  "n_postings": 5,
-  "avg_age_days": 76.0,
-  "pct_english": 20.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "wesel",
-  "n_postings": 5,
-  "avg_age_days": 22.6,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "mainz",
-  "n_postings": 5,
-  "avg_age_days": 29.8,
-  "pct_english": 20.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "neu-ulm",
-  "n_postings": 5,
-  "avg_age_days": 55.8,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "erlangen",
-  "n_postings": 5,
-  "avg_age_days": 9.2,
-  "pct_english": 0.0,
-  "pct_agency": 40.0
- },
- {
-  "country": "de",
-  "city": "magdeburg",
-  "n_postings": 4,
-  "avg_age_days": 44.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "barnim",
-  "n_postings": 4,
-  "avg_age_days": 108.0,
-  "pct_english": 75.0,
   "pct_agency": 0.0
  },
  {
   "country": "at",
   "city": "linz",
-  "n_postings": 4,
-  "avg_age_days": 26.0,
-  "pct_english": 0.0,
-  "pct_agency": 25.0
- },
- {
-  "country": "de",
-  "city": "schwarzwald-baar-kreis",
-  "n_postings": 4,
-  "avg_age_days": 72.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "horgen",
-  "n_postings": 4,
-  "avg_age_days": 3.3,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "recklinghausen",
-  "n_postings": 4,
-  "avg_age_days": 14.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "minden-luebbecke",
-  "n_postings": 4,
-  "avg_age_days": 35.8,
-  "pct_english": 25.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "hoefe",
-  "n_postings": 4,
-  "avg_age_days": 50.5,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "hochtaunuskreis",
-  "n_postings": 4,
-  "avg_age_days": 36.8,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "cloppenburg",
-  "n_postings": 4,
-  "avg_age_days": 28.5,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "landsberg am lech",
-  "n_postings": 4,
-  "avg_age_days": 30.8,
-  "pct_english": 0.0,
-  "pct_agency": 50.0
- },
- {
-  "country": "de",
-  "city": "soest",
-  "n_postings": 4,
-  "avg_age_days": 18.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "main-kinzig-kreis",
-  "n_postings": 4,
-  "avg_age_days": 92.5,
-  "pct_english": 25.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "krefeld",
-  "n_postings": 4,
-  "avg_age_days": 9.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "bamberg",
-  "n_postings": 4,
-  "avg_age_days": 23.3,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "moedling",
-  "n_postings": 4,
-  "avg_age_days": 9.8,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "arlesheim",
-  "n_postings": 4,
-  "avg_age_days": 11.8,
-  "pct_english": 75.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "hochdorf",
-  "n_postings": 4,
-  "avg_age_days": 17.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "werdenberg",
-  "n_postings": 4,
-  "avg_age_days": 6.3,
-  "pct_english": 0.0,
-  "pct_agency": 50.0
- },
- {
-  "country": "de",
-  "city": "wuerzburg",
-  "n_postings": 4,
-  "avg_age_days": 16.5,
-  "pct_english": 25.0,
-  "pct_agency": 25.0
- },
- {
-  "country": "de",
-  "city": "chemnitz",
-  "n_postings": 4,
-  "avg_age_days": 51.3,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "rhein-neckar-kreis",
-  "n_postings": 4,
-  "avg_age_days": 8.8,
-  "pct_english": 25.0,
-  "pct_agency": 25.0
- },
- {
-  "country": "de",
-  "city": "stormarn",
-  "n_postings": 4,
-  "avg_age_days": 30.8,
-  "pct_english": 0.0,
-  "pct_agency": 25.0
- },
- {
-  "country": "de",
-  "city": "emsland",
-  "n_postings": 3,
+  "n_postings": 6,
   "avg_age_days": 18.7,
-  "pct_english": 66.7,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "hagen",
-  "n_postings": 3,
-  "avg_age_days": 22.7,
   "pct_english": 0.0,
-  "pct_agency": 0.0
+  "pct_agency": 16.7
  },
  {
-  "country": "at",
-  "city": "klagenfurt",
-  "n_postings": 3,
-  "avg_age_days": 3.0,
-  "pct_english": 33.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "warendorf",
-  "n_postings": 3,
-  "avg_age_days": 69.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "leverkusen",
-  "n_postings": 3,
-  "avg_age_days": 25.3,
-  "pct_english": 66.7,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "vorpommern-ruegen",
-  "n_postings": 3,
-  "avg_age_days": 10.7,
-  "pct_english": 0.0,
-  "pct_agency": 33.3
- },
- {
-  "country": "de",
-  "city": "pforzheim",
-  "n_postings": 3,
-  "avg_age_days": 44.7,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "ebersberg",
-  "n_postings": 3,
-  "avg_age_days": 62.0,
-  "pct_english": 0.0,
+  "country": "ch",
+  "city": "basel",
+  "n_postings": 6,
+  "avg_age_days": 11.3,
+  "pct_english": 50.0,
   "pct_agency": 0.0
  },
  {
   "country": "ch",
-  "city": "winterthur",
-  "n_postings": 3,
-  "avg_age_days": 6.7,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "wunsiedel im fichtelgebirge",
-  "n_postings": 3,
-  "avg_age_days": 31.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "schwerin",
-  "n_postings": 3,
-  "avg_age_days": 31.0,
+  "city": "thun",
+  "n_postings": 6,
+  "avg_age_days": 7.7,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "at",
   "city": "salzburg",
-  "n_postings": 3,
-  "avg_age_days": 4.0,
-  "pct_english": 33.3,
+  "n_postings": 6,
+  "avg_age_days": 5.0,
+  "pct_english": 16.7,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "potsdam",
-  "n_postings": 3,
-  "avg_age_days": 72.3,
-  "pct_english": 33.3,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "muelheim an der ruhr",
-  "n_postings": 3,
-  "avg_age_days": 44.3,
+  "city": "kiel",
+  "n_postings": 5,
+  "avg_age_days": 57.8,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "neumuenster",
-  "n_postings": 3,
-  "avg_age_days": 9.0,
+  "city": "magdeburg",
+  "n_postings": 5,
+  "avg_age_days": 51.4,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "aachen",
+  "n_postings": 5,
+  "avg_age_days": 10.8,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
   "city": "regensburg",
-  "n_postings": 3,
-  "avg_age_days": 69.0,
+  "n_postings": 5,
+  "avg_age_days": 11.0,
+  "pct_english": 20.0,
+  "pct_agency": 20.0
+ },
+ {
+  "country": "de",
+  "city": "augsburg",
+  "n_postings": 5,
+  "avg_age_days": 10.4,
+  "pct_english": 0.0,
+  "pct_agency": 20.0
+ },
+ {
+  "country": "ch",
+  "city": "lausanne",
+  "n_postings": 5,
+  "avg_age_days": 12.8,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "boeblingen",
+  "n_postings": 5,
+  "avg_age_days": 6.2,
+  "pct_english": 20.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "dielsdorf",
+  "n_postings": 5,
+  "avg_age_days": 4.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "graz",
+  "n_postings": 4,
+  "avg_age_days": 51.0,
+  "pct_english": 25.0,
+  "pct_agency": 50.0
+ },
+ {
+  "country": "de",
+  "city": "erfurt",
+  "n_postings": 4,
+  "avg_age_days": 23.5,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "segeberg",
+  "city": "coburg",
+  "n_postings": 4,
+  "avg_age_days": 22.2,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "genf",
+  "n_postings": 4,
+  "avg_age_days": 7.5,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "guetersloh",
+  "n_postings": 4,
+  "avg_age_days": 3.5,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "dietikon",
   "n_postings": 3,
-  "avg_age_days": 2.0,
+  "avg_age_days": 65.7,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "bayreuth",
+  "city": "duisburg",
   "n_postings": 3,
-  "avg_age_days": 47.3,
+  "avg_age_days": 58.7,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "mainz",
+  "n_postings": 3,
+  "avg_age_days": 60.3,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "chemnitz",
+  "n_postings": 3,
+  "avg_age_days": 48.7,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "innsbruck",
+  "n_postings": 3,
+  "avg_age_days": 40.7,
+  "pct_english": 33.3,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "bochum",
+  "n_postings": 3,
+  "avg_age_days": 36.3,
+  "pct_english": 0.0,
+  "pct_agency": 33.3
+ },
+ {
+  "country": "de",
+  "city": "rhein-kreis neuss",
+  "n_postings": 3,
+  "avg_age_days": 29.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "lugano",
+  "n_postings": 3,
+  "avg_age_days": 40.3,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "rosenheim",
+  "n_postings": 3,
+  "avg_age_days": 30.3,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -1089,105 +465,217 @@
  },
  {
   "country": "de",
-  "city": "steinfurt",
-  "n_postings": 2,
-  "avg_age_days": 45.5,
+  "city": "paderborn",
+  "n_postings": 3,
+  "avg_age_days": 19.7,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "celle",
-  "n_postings": 2,
-  "avg_age_days": 1.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "hassberge",
-  "n_postings": 2,
-  "avg_age_days": 48.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "goettingen",
-  "n_postings": 2,
-  "avg_age_days": 4.0,
-  "pct_english": 0.0,
-  "pct_agency": 50.0
- },
- {
-  "country": "de",
-  "city": "unna",
-  "n_postings": 2,
-  "avg_age_days": 15.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "herford",
-  "n_postings": 2,
-  "avg_age_days": 31.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "goslar",
-  "n_postings": 2,
-  "avg_age_days": 1.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "maerkischer kreis",
-  "n_postings": 2,
-  "avg_age_days": 46.5,
+  "city": "main-taunus-kreis",
+  "n_postings": 3,
+  "avg_age_days": 21.7,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "ch",
-  "city": "schwyz",
-  "n_postings": 2,
+  "city": "ouest lausannois",
+  "n_postings": 3,
+  "avg_age_days": 14.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "dueren",
+  "n_postings": 3,
+  "avg_age_days": 26.3,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "saalekreis",
+  "n_postings": 3,
+  "avg_age_days": 19.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "halle",
+  "n_postings": 3,
   "avg_age_days": 10.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "hildesheim",
-  "n_postings": 2,
-  "avg_age_days": 64.0,
+  "city": "bodenseekreis",
+  "n_postings": 3,
+  "avg_age_days": 9.3,
+  "pct_english": 33.3,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "hochtaunuskreis",
+  "n_postings": 3,
+  "avg_age_days": 8.3,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "march",
+  "n_postings": 3,
+  "avg_age_days": 9.0,
+  "pct_english": 33.3,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "saarbruecken",
+  "n_postings": 3,
+  "avg_age_days": 5.3,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "horgen",
+  "n_postings": 3,
+  "avg_age_days": 6.7,
+  "pct_english": 66.7,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "unna",
+  "n_postings": 3,
+  "avg_age_days": 4.7,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "weilheim-schongau",
-  "n_postings": 2,
-  "avg_age_days": 2.5,
+  "city": "minden-luebbecke",
+  "n_postings": 3,
+  "avg_age_days": 4.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "ludwigsburg",
+  "city": "braunschweig",
+  "n_postings": 3,
+  "avg_age_days": 3.0,
+  "pct_english": 33.3,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "bielefeld",
+  "n_postings": 3,
+  "avg_age_days": 3.7,
+  "pct_english": 0.0,
+  "pct_agency": 33.3
+ },
+ {
+  "country": "de",
+  "city": "eifelkreis bitburg-pruem",
   "n_postings": 2,
-  "avg_age_days": 62.0,
+  "avg_age_days": 130.5,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "holzminden",
+  "city": "osnabrueck",
   "n_postings": 2,
-  "avg_age_days": 16.0,
+  "avg_age_days": 106.5,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "freiburg",
+  "n_postings": 2,
+  "avg_age_days": 51.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "fuerth",
+  "n_postings": 2,
+  "avg_age_days": 51.5,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "kanton zuerich",
+  "n_postings": 2,
+  "avg_age_days": 53.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "barnim",
+  "n_postings": 2,
+  "avg_age_days": 25.5,
+  "pct_english": 50.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "saechsische schweiz-osterzgebirge",
+  "n_postings": 2,
+  "avg_age_days": 23.5,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "cloppenburg",
+  "n_postings": 2,
+  "avg_age_days": 28.5,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "heidelberg",
+  "n_postings": 2,
+  "avg_age_days": 22.5,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "rhein-sieg-kreis",
+  "n_postings": 2,
+  "avg_age_days": 26.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "berner jura",
+  "n_postings": 2,
+  "avg_age_days": 25.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "giessen",
+  "n_postings": 2,
+  "avg_age_days": 13.0,
   "pct_english": 0.0,
   "pct_agency": 50.0
  },
@@ -1195,63 +683,7 @@
   "country": "de",
   "city": "wolfsburg",
   "n_postings": 2,
-  "avg_age_days": 46.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "ortenaukreis",
-  "n_postings": 2,
-  "avg_age_days": 22.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "oberbergischer kreis",
-  "n_postings": 2,
-  "avg_age_days": 74.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "viersen",
-  "n_postings": 2,
-  "avg_age_days": 0.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "vorpommern-greifswald",
-  "n_postings": 2,
-  "avg_age_days": 150.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "halle",
-  "n_postings": 2,
-  "avg_age_days": 30.0,
-  "pct_english": 50.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "bellinzona",
-  "n_postings": 2,
-  "avg_age_days": 11.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "rhein-sieg-kreis",
-  "n_postings": 2,
-  "avg_age_days": 13.5,
+  "avg_age_days": 22.5,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -1265,553 +697,89 @@
  },
  {
   "country": "de",
-  "city": "heinsberg",
+  "city": "zwickau",
   "n_postings": 2,
-  "avg_age_days": 1.0,
+  "avg_age_days": 11.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "ansbach",
+  "city": "muehldorf am inn",
   "n_postings": 2,
-  "avg_age_days": 66.0,
+  "avg_age_days": 12.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "bad kreuznach",
-  "n_postings": 2,
-  "avg_age_days": 21.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "schwaz",
-  "n_postings": 2,
-  "avg_age_days": 83.5,
-  "pct_english": 50.0,
-  "pct_agency": 50.0
  },
  {
   "country": "ch",
-  "city": "schaffhausen",
+  "city": "bellinzona",
   "n_postings": 2,
-  "avg_age_days": 6.0,
-  "pct_english": 50.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "trier",
-  "n_postings": 2,
-  "avg_age_days": 13.5,
+  "avg_age_days": 11.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "coesfeld",
+  "city": "celle",
   "n_postings": 2,
-  "avg_age_days": 7.0,
+  "avg_age_days": 5.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "rems-murr-kreis",
+  "city": "freising",
   "n_postings": 2,
-  "avg_age_days": 16.0,
+  "avg_age_days": 5.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "landau in der pfalz",
-  "n_postings": 2,
-  "avg_age_days": 115.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "neuburg-schrobenhausen",
-  "n_postings": 2,
-  "avg_age_days": 44.0,
-  "pct_english": 0.0,
-  "pct_agency": 50.0
- },
- {
-  "country": "de",
-  "city": "lippe",
-  "n_postings": 2,
-  "avg_age_days": 1.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "villach",
-  "n_postings": 2,
-  "avg_age_days": 22.5,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "giessen",
-  "n_postings": 2,
-  "avg_age_days": 3.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "hochsauerlandkreis",
-  "n_postings": 2,
-  "avg_age_days": 170.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "ennepe-ruhr-kreis",
-  "n_postings": 2,
-  "avg_age_days": 23.5,
-  "pct_english": 0.0,
-  "pct_agency": 100.0
  },
  {
   "country": "ch",
-  "city": "aarau",
+  "city": "buelach",
   "n_postings": 2,
-  "avg_age_days": 5.5,
+  "avg_age_days": 5.0,
   "pct_english": 50.0,
   "pct_agency": 0.0
  },
  {
-  "country": "de",
-  "city": "schwaebisch hall",
+  "country": "ch",
+  "city": "zug",
   "n_postings": 2,
-  "avg_age_days": 33.0,
+  "avg_age_days": 5.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "main-tauber-kreis",
+  "city": "koblenz",
   "n_postings": 2,
   "avg_age_days": 4.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "hameln-pyrmont",
-  "n_postings": 2,
-  "avg_age_days": 14.0,
-  "pct_english": 0.0,
-  "pct_agency": 50.0
- },
- {
-  "country": "ch",
-  "city": "oberaargau",
-  "n_postings": 2,
-  "avg_age_days": 8.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "lindau",
-  "n_postings": 2,
-  "avg_age_days": 44.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "fuerth",
-  "n_postings": 2,
-  "avg_age_days": 142.5,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "uster",
-  "n_postings": 2,
-  "avg_age_days": 34.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "rheinisch-bergischer kreis",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "aurich",
-  "n_postings": 1,
-  "avg_age_days": 1.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "northeim",
-  "n_postings": 1,
-  "avg_age_days": 70.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "gera",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "erding",
-  "n_postings": 1,
-  "avg_age_days": 48.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "solingen",
-  "n_postings": 1,
-  "avg_age_days": 11.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "erlangen-hoechstadt",
-  "n_postings": 1,
-  "avg_age_days": 145.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "miesbach",
-  "n_postings": 1,
-  "avg_age_days": 25.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "amberg-sulzbach",
-  "n_postings": 1,
-  "avg_age_days": 38.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "fulda",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "landquart",
-  "n_postings": 1,
-  "avg_age_days": 10.0,
-  "pct_english": 0.0,
-  "pct_agency": 100.0
- },
- {
-  "country": "de",
-  "city": "baden-wuerttemberg",
-  "n_postings": 1,
-  "avg_age_days": 180.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "rhein-lahn-kreis",
-  "n_postings": 1,
-  "avg_age_days": 71.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "ahrweiler",
-  "n_postings": 1,
-  "avg_age_days": 65.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "march",
-  "n_postings": 1,
-  "avg_age_days": 10.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "gelsenkirchen",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "euskirchen",
-  "n_postings": 1,
-  "avg_age_days": 41.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "donau-ries",
-  "n_postings": 1,
-  "avg_age_days": 11.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "guenzburg",
-  "n_postings": 1,
-  "avg_age_days": 27.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "zollernalbkreis",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "einsiedeln",
-  "n_postings": 1,
-  "avg_age_days": 11.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "bergstrasse",
-  "n_postings": 1,
-  "avg_age_days": 14.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "appenzell innerrhoden",
-  "n_postings": 1,
-  "avg_age_days": 146.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "kanton luzern",
-  "n_postings": 1,
-  "avg_age_days": 66.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "cottbus",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "waldeck-frankenberg",
-  "n_postings": 1,
-  "avg_age_days": 11.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "weissenburg-gunzenhausen",
-  "n_postings": 1,
-  "avg_age_days": 11.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "herne",
-  "n_postings": 1,
-  "avg_age_days": 1.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "neuenburg",
-  "n_postings": 1,
-  "avg_age_days": 4.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "brandenburg an der havel",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
+  "pct_english": 50.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
   "city": "kempten",
-  "n_postings": 1,
-  "avg_age_days": 70.0,
+  "n_postings": 2,
+  "avg_age_days": 3.0,
   "pct_english": 0.0,
-  "pct_agency": 0.0
+  "pct_agency": 50.0
  },
  {
-  "country": "ch",
-  "city": "mendrisio",
-  "n_postings": 1,
-  "avg_age_days": 17.0,
-  "pct_english": 100.0,
+  "country": "de",
+  "city": "ingolstadt",
+  "n_postings": 2,
+  "avg_age_days": 2.5,
+  "pct_english": 50.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "fuerstenfeldbruck",
-  "n_postings": 1,
-  "avg_age_days": 12.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "liezen",
-  "n_postings": 1,
-  "avg_age_days": 36.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "sursee",
-  "n_postings": 1,
-  "avg_age_days": 13.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "nordrhein-westfalen",
-  "n_postings": 1,
-  "avg_age_days": 27.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "delmenhorst",
-  "n_postings": 1,
-  "avg_age_days": 11.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "affoltern",
-  "n_postings": 1,
-  "avg_age_days": 5.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "goeppingen",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "wels",
-  "n_postings": 1,
-  "avg_age_days": 34.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "ch",
-  "city": "meilen",
-  "n_postings": 1,
-  "avg_age_days": 26.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "calw",
-  "n_postings": 1,
-  "avg_age_days": 196.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "wittmund",
-  "n_postings": 1,
-  "avg_age_days": 10.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "goerlitz",
-  "n_postings": 1,
-  "avg_age_days": 2.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "hamm",
-  "n_postings": 1,
-  "avg_age_days": 75.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "steinburg",
-  "n_postings": 1,
-  "avg_age_days": 40.0,
+  "city": "recklinghausen",
+  "n_postings": 2,
+  "avg_age_days": 1.5,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -1825,27 +793,179 @@
  },
  {
   "country": "de",
-  "city": "aschaffenburg",
+  "city": "biberach",
   "n_postings": 1,
-  "avg_age_days": 2.0,
+  "avg_age_days": 208.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
-  "country": "ch",
-  "city": "kanton tessin",
+  "country": "de",
+  "city": "amberg",
   "n_postings": 1,
-  "avg_age_days": 8.0,
+  "avg_age_days": 196.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "kassel",
+  "n_postings": 1,
+  "avg_age_days": 196.0,
   "pct_english": 100.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "forchheim",
+  "city": "kaiserslautern",
   "n_postings": 1,
-  "avg_age_days": 2.0,
+  "avg_age_days": 196.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "mettmann",
+  "n_postings": 1,
+  "avg_age_days": 124.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "schwaz",
+  "n_postings": 1,
+  "avg_age_days": 118.0,
   "pct_english": 0.0,
   "pct_agency": 100.0
+ },
+ {
+  "country": "ch",
+  "city": "hoefe",
+  "n_postings": 1,
+  "avg_age_days": 100.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "steinfurt",
+  "n_postings": 1,
+  "avg_age_days": 82.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "schwandorf",
+  "n_postings": 1,
+  "avg_age_days": 41.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "euskirchen",
+  "n_postings": 1,
+  "avg_age_days": 41.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "wels",
+  "n_postings": 1,
+  "avg_age_days": 34.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "tuebingen",
+  "n_postings": 1,
+  "avg_age_days": 21.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "starnberg",
+  "n_postings": 1,
+  "avg_age_days": 20.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "schwarzwald-baar-kreis",
+  "n_postings": 1,
+  "avg_age_days": 14.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "alb-donau-kreis",
+  "n_postings": 1,
+  "avg_age_days": 14.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "ansbach",
+  "n_postings": 1,
+  "avg_age_days": 14.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "werdenberg",
+  "n_postings": 1,
+  "avg_age_days": 12.0,
+  "pct_english": 0.0,
+  "pct_agency": 100.0
+ },
+ {
+  "country": "de",
+  "city": "landsberg am lech",
+  "n_postings": 1,
+  "avg_age_days": 12.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "neuburg-schrobenhausen",
+  "n_postings": 1,
+  "avg_age_days": 12.0,
+  "pct_english": 0.0,
+  "pct_agency": 100.0
+ },
+ {
+  "country": "de",
+  "city": "waldeck-frankenberg",
+  "n_postings": 1,
+  "avg_age_days": 11.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "grieskirchen",
+  "n_postings": 1,
+  "avg_age_days": 8.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "rendsburg-eckernfoerde",
+  "n_postings": 1,
+  "avg_age_days": 6.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
  },
  {
   "country": "at",
@@ -1856,96 +976,216 @@
   "pct_agency": 0.0
  },
  {
-  "country": "de",
-  "city": "flensburg",
+  "country": "ch",
+  "city": "kreuzlingen",
   "n_postings": 1,
-  "avg_age_days": 6.0,
-  "pct_english": 0.0,
-  "pct_agency": 100.0
- },
- {
-  "country": "de",
-  "city": "germersheim",
-  "n_postings": 1,
-  "avg_age_days": 17.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "ostholstein",
-  "n_postings": 1,
-  "avg_age_days": 89.0,
+  "avg_age_days": 5.0,
   "pct_english": 100.0,
   "pct_agency": 0.0
  },
  {
   "country": "ch",
-  "city": "lebern",
+  "city": "plessur",
   "n_postings": 1,
-  "avg_age_days": 8.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "bludenz",
-  "n_postings": 1,
-  "avg_age_days": 90.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "vogtlandkreis",
-  "n_postings": 1,
-  "avg_age_days": 1.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "suhl",
-  "n_postings": 1,
-  "avg_age_days": 70.0,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "reutte",
-  "n_postings": 1,
-  "avg_age_days": 11.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "nordsachsen",
-  "n_postings": 1,
-  "avg_age_days": 14.0,
+  "avg_age_days": 5.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "ch",
-  "city": "lenzburg",
+  "city": "meilen",
   "n_postings": 1,
-  "avg_age_days": 10.0,
+  "avg_age_days": 5.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "affoltern",
+  "n_postings": 1,
+  "avg_age_days": 5.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "neumuenster",
+  "n_postings": 1,
+  "avg_age_days": 5.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "ludwigshafen am rhein",
+  "city": "vorpommern-ruegen",
   "n_postings": 1,
-  "avg_age_days": 1.0,
+  "avg_age_days": 5.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "rostock",
+  "n_postings": 1,
+  "avg_age_days": 5.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "siegen-wittgenstein",
+  "n_postings": 1,
+  "avg_age_days": 5.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "rhein-neckar-kreis",
+  "n_postings": 1,
+  "avg_age_days": 5.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "wiesbaden",
+  "n_postings": 1,
+  "avg_age_days": 4.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "neuenburg",
+  "n_postings": 1,
+  "avg_age_days": 4.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "lueneburg",
+  "n_postings": 1,
+  "avg_age_days": 3.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "luebeck",
+  "n_postings": 1,
+  "avg_age_days": 3.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "at",
-  "city": "bruck-muerzzuschlag",
+  "city": "klagenfurt",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "warendorf",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "ostalbkreis",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "zollernalbkreis",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "bad kreuznach",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "hochsauerlandkreis",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "aschaffenburg",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "bayreuth",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "lippe",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "baden-baden",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "rheinisch-bergischer kreis",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "rhein-erft-kreis",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "bamberg",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "brandenburg an der havel",
   "n_postings": 1,
   "avg_age_days": 2.0,
   "pct_english": 0.0,
@@ -1961,9 +1201,113 @@
  },
  {
   "country": "de",
-  "city": "kitzingen",
+  "city": "cottbus",
   "n_postings": 1,
-  "avg_age_days": 11.0,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "borken",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "hameln-pyrmont",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "goettingen",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "segeberg",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "goerlitz",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "goeppingen",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "vorpommern-greifswald",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "oberbergischer kreis",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "goslar",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "gelsenkirchen",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "gera",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "fulda",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "hagen",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -1977,111 +1321,39 @@
  },
  {
   "country": "ch",
-  "city": "pfaeffikon",
+  "city": "nyon",
   "n_postings": 1,
-  "avg_age_days": 109.0,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "ch",
+  "city": "wil",
+  "n_postings": 1,
+  "avg_age_days": 2.0,
   "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "gifhorn",
-  "n_postings": 1,
-  "avg_age_days": 1.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "marburg-biedenkopf",
-  "n_postings": 1,
-  "avg_age_days": 1.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "schwalm-eder-kreis",
-  "n_postings": 1,
-  "avg_age_days": 1.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "freising",
-  "n_postings": 1,
-  "avg_age_days": 5.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "saarpfalz-kreis",
-  "n_postings": 1,
-  "avg_age_days": 38.0,
-  "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "ch",
   "city": "mittelland",
   "n_postings": 1,
-  "avg_age_days": 8.0,
+  "avg_age_days": 2.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "luebeck",
+  "city": "wilhelmshaven",
   "n_postings": 1,
-  "avg_age_days": 3.0,
+  "avg_age_days": 2.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "wesermarsch",
-  "n_postings": 1,
-  "avg_age_days": 131.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "ingolstadt",
-  "n_postings": 1,
-  "avg_age_days": 3.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "neustadt an der waldnaab",
-  "n_postings": 1,
-  "avg_age_days": 12.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "oberallgaeu",
-  "n_postings": 1,
-  "avg_age_days": 196.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "grieskirchen",
-  "n_postings": 1,
-  "avg_age_days": 8.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "de",
-  "city": "lahn-dill-kreis",
+  "city": "germersheim",
   "n_postings": 1,
   "avg_age_days": 1.0,
   "pct_english": 0.0,
@@ -2089,25 +1361,33 @@
  },
  {
   "country": "de",
-  "city": "oberhausen",
+  "city": "esslingen",
   "n_postings": 1,
-  "avg_age_days": 1.0,
+  "avg_age_days": 0.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "vulkaneifel",
+  "city": "wuerzburg",
   "n_postings": 1,
-  "avg_age_days": 172.0,
+  "avg_age_days": 0.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "de",
-  "city": "rhein-hunsrueck-kreis",
+  "city": "wuppertal",
   "n_postings": 1,
-  "avg_age_days": 49.0,
+  "avg_age_days": 0.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "de",
+  "city": "potsdam",
+  "n_postings": 1,
+  "avg_age_days": 0.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  }
