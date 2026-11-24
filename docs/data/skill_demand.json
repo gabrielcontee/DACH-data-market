@@ -2,529 +2,169 @@
  {
   "skill": "java",
   "skill_category": "language",
-  "n_postings": 473,
-  "pct_postings": 36.1,
-  "avg_age_days": 25.2,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "llm",
-  "skill_category": "genai",
-  "n_postings": 156,
-  "pct_postings": 11.9,
-  "avg_age_days": 30.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "ai_agents",
-  "skill_category": "genai",
-  "n_postings": 135,
-  "pct_postings": 10.3,
-  "avg_age_days": 19.1,
+  "n_postings": 30,
+  "pct_postings": 28.3,
+  "avg_age_days": 65.4,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
   "skill": "genai",
   "skill_category": "genai",
-  "n_postings": 118,
-  "pct_postings": 9.0,
-  "avg_age_days": 19.8,
+  "n_postings": 7,
+  "pct_postings": 6.6,
+  "avg_age_days": 42.4,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "kotlin",
-  "skill_category": "language",
-  "n_postings": 95,
-  "pct_postings": 7.3,
-  "avg_age_days": 30.2,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "spring",
-  "skill_category": "backend",
-  "n_postings": 72,
-  "pct_postings": 5.5,
-  "avg_age_days": 36.7,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "microservices",
-  "skill_category": "backend",
-  "n_postings": 68,
-  "pct_postings": 5.2,
-  "avg_age_days": 27.1,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "prompting",
+  "skill": "llm",
   "skill_category": "genai",
-  "n_postings": 62,
-  "pct_postings": 4.7,
-  "avg_age_days": 5.3,
+  "n_postings": 7,
+  "pct_postings": 6.6,
+  "avg_age_days": 95.9,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "ios",
-  "skill_category": "mobile",
-  "n_postings": 45,
-  "pct_postings": 3.4,
-  "avg_age_days": 64.7,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "kubernetes",
-  "skill_category": "devops",
-  "n_postings": 41,
-  "pct_postings": 3.1,
-  "avg_age_days": 9.8,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "cicd",
-  "skill_category": "devops",
-  "n_postings": 40,
-  "pct_postings": 3.1,
-  "avg_age_days": 40.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "python",
-  "skill_category": "language",
-  "n_postings": 40,
-  "pct_postings": 3.1,
-  "avg_age_days": 15.4,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "javascript",
-  "skill_category": "language",
-  "n_postings": 29,
-  "pct_postings": 2.2,
-  "avg_age_days": 41.3,
+  "skill": "ai_agents",
+  "skill_category": "genai",
+  "n_postings": 6,
+  "pct_postings": 5.7,
+  "avg_age_days": 10.8,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
   "skill": "azure",
   "skill_category": "cloud",
-  "n_postings": 28,
-  "pct_postings": 2.1,
-  "avg_age_days": 55.2,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "aws",
-  "skill_category": "cloud",
-  "n_postings": 23,
-  "pct_postings": 1.8,
-  "avg_age_days": 44.9,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "rag",
-  "skill_category": "genai",
-  "n_postings": 19,
-  "pct_postings": 1.5,
-  "avg_age_days": 58.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "android",
-  "skill_category": "mobile",
-  "n_postings": 17,
-  "pct_postings": 1.3,
-  "avg_age_days": 51.9,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "docker",
-  "skill_category": "devops",
-  "n_postings": 17,
-  "pct_postings": 1.3,
-  "avg_age_days": 23.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "gitops",
-  "skill_category": "devops",
-  "n_postings": 17,
-  "pct_postings": 1.3,
-  "avg_age_days": 3.7,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "sap",
-  "skill_category": "enterprise",
-  "n_postings": 16,
-  "pct_postings": 1.2,
-  "avg_age_days": 25.4,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "postgres",
-  "skill_category": "database",
-  "n_postings": 15,
-  "pct_postings": 1.1,
-  "avg_age_days": 60.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "git",
-  "skill_category": "devops",
-  "n_postings": 14,
-  "pct_postings": 1.1,
-  "avg_age_days": 21.9,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "rest_api",
-  "skill_category": "backend",
-  "n_postings": 14,
-  "pct_postings": 1.1,
-  "avg_age_days": 14.9,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "kafka",
-  "skill_category": "streaming",
-  "n_postings": 12,
-  "pct_postings": 0.9,
-  "avg_age_days": 61.6,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "sql",
-  "skill_category": "language",
-  "n_postings": 12,
-  "pct_postings": 0.9,
-  "avg_age_days": 35.8,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "swift",
-  "skill_category": "language",
-  "n_postings": 10,
-  "pct_postings": 0.8,
-  "avg_age_days": 51.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "openai_api",
-  "skill_category": "genai",
-  "n_postings": 9,
-  "pct_postings": 0.7,
-  "avg_age_days": 37.9,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "dotnet",
-  "skill_category": "language",
-  "n_postings": 8,
-  "pct_postings": 0.6,
-  "avg_age_days": 17.4,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "observability",
-  "skill_category": "devops",
-  "n_postings": 8,
-  "pct_postings": 0.6,
-  "avg_age_days": 28.9,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "scala",
-  "skill_category": "language",
-  "n_postings": 7,
-  "pct_postings": 0.5,
-  "avg_age_days": 8.7,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "ai_coding",
-  "skill_category": "genai",
-  "n_postings": 6,
-  "pct_postings": 0.5,
-  "avg_age_days": 34.7,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "cv",
-  "skill_category": "nlp_cv",
-  "n_postings": 6,
-  "pct_postings": 0.5,
-  "avg_age_days": 67.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "deeplearning",
-  "skill_category": "nlp_cv",
-  "n_postings": 6,
-  "pct_postings": 0.5,
-  "avg_age_days": 10.8,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "gcp",
-  "skill_category": "cloud",
-  "n_postings": 6,
-  "pct_postings": 0.5,
-  "avg_age_days": 10.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "ai_eval",
-  "skill_category": "genai",
   "n_postings": 5,
-  "pct_postings": 0.4,
-  "avg_age_days": 10.6,
+  "pct_postings": 4.7,
+  "avg_age_days": 156.8,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "grpc",
-  "skill_category": "backend",
-  "n_postings": 5,
-  "pct_postings": 0.4,
-  "avg_age_days": 1.2,
+  "skill": "javascript",
+  "skill_category": "language",
+  "n_postings": 4,
+  "pct_postings": 3.8,
+  "avg_age_days": 84.2,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "langchain",
-  "skill_category": "genai",
-  "n_postings": 5,
-  "pct_postings": 0.4,
-  "avg_age_days": 14.8,
+  "skill": "python",
+  "skill_category": "language",
+  "n_postings": 4,
+  "pct_postings": 3.8,
+  "avg_age_days": 65.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
   "skill": "accessibility",
   "skill_category": "mobile",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 8.8,
+  "n_postings": 3,
+  "pct_postings": 2.8,
+  "avg_age_days": 10.0,
+  "snapshot_date": "2026-11-24T00:00:00.000"
+ },
+ {
+  "skill": "kotlin",
+  "skill_category": "language",
+  "n_postings": 3,
+  "pct_postings": 2.8,
+  "avg_age_days": 156.3,
+  "snapshot_date": "2026-11-24T00:00:00.000"
+ },
+ {
+  "skill": "ios",
+  "skill_category": "mobile",
+  "n_postings": 2,
+  "pct_postings": 1.9,
+  "avg_age_days": 69.0,
+  "snapshot_date": "2026-11-24T00:00:00.000"
+ },
+ {
+  "skill": "spring",
+  "skill_category": "backend",
+  "n_postings": 2,
+  "pct_postings": 1.9,
+  "avg_age_days": 75.5,
+  "snapshot_date": "2026-11-24T00:00:00.000"
+ },
+ {
+  "skill": "aws",
+  "skill_category": "cloud",
+  "n_postings": 1,
+  "pct_postings": 0.9,
+  "avg_age_days": 124.0,
+  "snapshot_date": "2026-11-24T00:00:00.000"
+ },
+ {
+  "skill": "cv",
+  "skill_category": "nlp_cv",
+  "n_postings": 1,
+  "pct_postings": 0.9,
+  "avg_age_days": 124.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
   "skill": "databricks",
   "skill_category": "platform",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 81.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "elastic",
-  "skill_category": "database",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 10.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "flutter",
-  "skill_category": "mobile",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 82.2,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "kmp",
-  "skill_category": "mobile",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 3.2,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "mongodb",
-  "skill_category": "database",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 17.8,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "nlp",
-  "skill_category": "nlp_cv",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 7.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "php",
-  "skill_category": "language",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 40.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "swiftui",
-  "skill_category": "mobile",
-  "n_postings": 4,
-  "pct_postings": 0.3,
-  "avg_age_days": 71.2,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "flink",
-  "skill_category": "streaming",
-  "n_postings": 3,
-  "pct_postings": 0.2,
-  "avg_age_days": 7.3,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "oracle",
-  "skill_category": "database",
-  "n_postings": 3,
-  "pct_postings": 0.2,
-  "avg_age_days": 44.3,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "pytorch",
-  "skill_category": "ml_framework",
-  "n_postings": 3,
-  "pct_postings": 0.2,
-  "avg_age_days": 23.3,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "react_native",
-  "skill_category": "mobile",
-  "n_postings": 3,
-  "pct_postings": 0.2,
-  "avg_age_days": 4.3,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "compose",
-  "skill_category": "mobile",
-  "n_postings": 2,
-  "pct_postings": 0.2,
-  "avg_age_days": 4.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "golang",
-  "skill_category": "language",
-  "n_postings": 2,
-  "pct_postings": 0.2,
-  "avg_age_days": 57.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "graphql",
-  "skill_category": "backend",
-  "n_postings": 2,
-  "pct_postings": 0.2,
-  "avg_age_days": 53.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "nodejs",
-  "skill_category": "backend",
-  "n_postings": 2,
-  "pct_postings": 0.2,
-  "avg_age_days": 16.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "objc",
-  "skill_category": "language",
-  "n_postings": 2,
-  "pct_postings": 0.2,
-  "avg_age_days": 2.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "snowflake",
-  "skill_category": "warehouse",
-  "n_postings": 2,
-  "pct_postings": 0.2,
-  "avg_age_days": 28.5,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "cache",
-  "skill_category": "backend",
   "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 5.0,
+  "pct_postings": 0.9,
+  "avg_age_days": 292.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "etl",
-  "skill_category": "practice",
+  "skill": "kubernetes",
+  "skill_category": "devops",
   "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 111.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "excel",
-  "skill_category": "bi",
-  "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 14.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "jvm_testing",
-  "skill_category": "testing",
-  "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 5.0,
-  "snapshot_date": "2026-11-24T00:00:00.000"
- },
- {
-  "skill": "mysql",
-  "skill_category": "database",
-  "n_postings": 1,
-  "pct_postings": 0.1,
+  "pct_postings": 0.9,
   "avg_age_days": 102.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "redshift",
-  "skill_category": "warehouse",
+  "skill": "microservices",
+  "skill_category": "backend",
   "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 111.0,
+  "pct_postings": 0.9,
+  "avg_age_days": 357.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "tensorflow",
-  "skill_category": "ml_framework",
+  "skill": "openai_api",
+  "skill_category": "genai",
   "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 25.0,
+  "pct_postings": 0.9,
+  "avg_age_days": 28.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "terraform",
-  "skill_category": "devops",
+  "skill": "rag",
+  "skill_category": "genai",
   "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 3.0,
+  "pct_postings": 0.9,
+  "avg_age_days": 34.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "uikit",
-  "skill_category": "mobile",
+  "skill": "rest_api",
+  "skill_category": "backend",
   "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 45.0,
+  "pct_postings": 0.9,
+  "avg_age_days": 11.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  },
  {
-  "skill": "xcode",
-  "skill_category": "mobile",
+  "skill": "sap",
+  "skill_category": "enterprise",
   "n_postings": 1,
-  "pct_postings": 0.1,
-  "avg_age_days": 45.0,
+  "pct_postings": 0.9,
+  "avg_age_days": 16.0,
+  "snapshot_date": "2026-11-24T00:00:00.000"
+ },
+ {
+  "skill": "sql",
+  "skill_category": "language",
+  "n_postings": 1,
+  "pct_postings": 0.9,
+  "avg_age_days": 286.0,
   "snapshot_date": "2026-11-24T00:00:00.000"
  }
 ]
