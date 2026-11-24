@@ -1,14 +1,14 @@
 name: data freshness
 
-# Daily check that the Databricks pipeline published today's data.
-# The pipeline runs around 08:00 Vienna time and stamps docs/data/meta.json
-# with the run date (UTC). If today's date is missing by 10:17 Vienna time,
-# this opens an issue labelled "stale-data" and fails, and GitHub emails you.
-# The issue closes itself on the first day the data is fresh again.
+# Weekday check that the refresh workflow published today's data.
+# refresh.yml runs at 05:30 UTC and stamps docs/data/meta.json with the
+# run date (UTC). If today's date is missing by 09:17 UTC, this opens an
+# issue labelled "stale-data" and fails, and GitHub emails you. The issue
+# closes itself on the first day the data is fresh again.
 
 on:
   schedule:
-    - cron: "17 9 * * *"      # 09:17 UTC = 10:17 Vienna in winter, 11:17 in summer
+    - cron: "17 9 * * 1-5"    # weekdays, like refresh.yml
   workflow_dispatch:          # "Run workflow" button for a manual check
 
 permissions:
@@ -45,7 +45,7 @@ jobs:
           if [ -z "$open" ]; then
             gh issue create --label stale-data \
               --title "Tracker data is stale: last published $updated" \
-              --body "The daily pipeline has not published since **$updated** ($age day(s) ago). Check the Databricks job run and the account. This issue closes itself once docs/data/meta.json is from today again."
+              --body "The daily pipeline has not published since **$updated** ($age day(s) ago). Check the latest run of the refresh data workflow in the Actions tab. This issue closes itself once docs/data/meta.json is from today again."
           else
             gh issue comment "$open" --body "Still stale on $(date -u +%F): last published $updated ($age day(s) ago)."
           fi

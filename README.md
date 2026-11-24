@@ -1,128 +1,113 @@
 <div align="center">
 
-# What's up with the AI/Data job market in Austria, Germany and Switzerland?
+# DACH job search: iOS, Kotlin/Spring and AI roles
 
-[![tests](https://img.shields.io/github/actions/workflow/status/Chrisinho8/DACH-data-job-market/tests.yml?branch=main&label=tests&labelColor=221F1A&color=6FA37F&style=flat-square)](https://github.com/Chrisinho8/DACH-data-job-market/actions/workflows/tests.yml)
-[![live postings](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FChrisinho8%2FDACH-data-job-market%2Fmain%2Fdocs%2Fdata%2Fmeta.json&query=%24.live_postings&label=live%20postings&labelColor=221F1A&color=E3A23F&style=flat-square&cacheSeconds=1800)](https://Chrisinho8.github.io/DACH-data-job-market/)
+[![tests](https://img.shields.io/github/actions/workflow/status/gabrielcontee/DACH-data-market/tests.yml?branch=main&label=tests&labelColor=221F1A&color=6FA37F&style=flat-square)](https://github.com/gabrielcontee/DACH-data-market/actions/workflows/tests.yml)
+[![live postings](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgabrielcontee%2FDACH-data-market%2Fmain%2Fdocs%2Fdata%2Fmeta.json&query=%24.live_postings&label=live%20postings&labelColor=221F1A&color=E3A23F&style=flat-square&cacheSeconds=1800)](https://gabrielcontee.github.io/DACH-data-market/)
 
-**[Open the live tracker](https://Chrisinho8.github.io/DACH-data-job-market/)** • [![updated](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FChrisinho8%2FDACH-data-job-market%2Fmain%2Fdocs%2Fdata%2Fmeta.json&query=%24.updated&label=updated&labelColor=221F1A&color=E56743&style=flat-square&cacheSeconds=1800)](https://Chrisinho8.github.io/DACH-data-job-market/)
+**[Open the site](https://gabrielcontee.github.io/DACH-data-market/)**
 
 </div>
 
-A daily snapshot of the DACH AI/data-job market: **3,000+ live postings from 1,200+ employers** across Germany, Austria and Switzerland. Every day at 08:00 UTC+2 a Databricks pipeline queries the Adzuna API for 18 AI/data related job titles in all three countries, deduplicates and classifies the results through a bronze/silver/gold Delta Lake. It then gets scanned against a curated 71-term skills dictionary and published to a static GitHub Page.
+A weekday snapshot of job postings in Germany, Austria and Switzerland that
+fit one CV: senior iOS, Kotlin/Spring Boot backend, and AI roles. Each
+posting gets a 0-100 fit score, and the postings table opens on Vienna plus
+anything that mentions remote.
 
-## How the tracker might help you
+Forked from [Christoph Ruckensteiner's DACH data job market tracker](https://github.com/Chrisinho8/DACH-data-job-market),
+which tracks data and AI roles on a Databricks pipeline. This fork keeps his
+site and swaps the pipeline for one Python script run by GitHub Actions.
 
-- **See the shape of the market** - volumes by role, city and country, how long postings stay open, seniority mix, tool mentions and many more.
-- **Read the postings behind any number.** Every chart is a count of real postings, and those postings are browsable: search by title or employer, filter by role, country, city and seniority, sort by newest or longest-open.
-- **Watch it move.** Nothing is ever overwritten, so each run adds to the record and every figure gains a second dimension: not just how many AI roles are open, but whether that number is climbing or declining.
+## What it searches for
 
-## Overview of the map
+| Group | Role families | Read from |
+| --- | --- | --- |
+| Your stack | iOS Engineer, Kotlin / Spring Backend, Java Backend, Mobile Engineer | the title, plus the full advert for generic titles ("Backend Engineer" found by a Kotlin search) |
+| AI | AI Engineer, GenAI / LLM, ML Engineer, MLOps, AI Consulting, AI Research | the title, with the original tracker's rules |
 
-Demo of 06/11/2026
- 
+Left out on purpose: data and BI roles, Android-only, Flutter and React
+Native roles, junior roles and entry programmes, and non-engineering jobs
+(product, sales, QA, design).
 
-<p align="center">
-  <img src="assets/map-demo.gif" width="820"
-       alt="Filtering the DACH map by role and switching between the bubble and heat-map views">
-</p>
+## The fit score
 
+`src/fit.py` scores every posting against the CV:
 
-## Main take-aways of the data (State of 20.08.2026)
+- **Role**: iOS and Kotlin/Spring start at 65, Java and generic mobile at 45,
+  GenAI and AI engineer at 45, the other AI families lower.
+- **Skills** named in the title or snippet that are on the CV: +5 each, up
+  to +25. Mobile and backend in the same posting: +10.
+- **Seniority**: senior +5.
+- **Gaps**: German at C1 or above -15, two or more database skills -10,
+  model-training stack -10, advert written in German -5.
 
-**Germany is the biggest market.** 3,133 of 3,625 postings are German - 86.4%, against 6.2% Austrian and 7.3% Swiss. The blue and green clusters on the map are Vienna, Graz, Linz, Innsbruck and the Zurich-Bern-Geneva line, and that is close to all of them. Any single-country claim about AT or CH rests on a few dozen adverts per family.
- 
-**Hiring is concentrated in a handful of cities.** Berlin (422) and Munich (344) are 21% of DACH between them; the top five are 36%. The rest is spread across 250-odd cities - the scatter of small bubbles through the Rhine-Ruhr and the south - most of them carrying single-digit counts.
- 
-**Speed varies more by city than by role.** Düsseldorf clears in 48 days and Munich in 49, while Frankfurt sits at 80, Zurich at 104 and Vienna at 105. The two non-German capitals are the slowest markets on the board, at more than twice Munich's pace, and the red figures in the "Avg days" column are where that shows.
- 
-**Berlin and Munich are where AI hiring is the most prominent.** 37% of Berlin's postings and 42% of Munich's are AI-related roles, against 19% in Hamburg and 13% in Düsseldorf. Berlin is also the most international: 58.5% of its postings are in English, versus 14.9% in Düsseldorf.
+65 or more is a **strong** fit. Below that, AI roles are labelled **AI** and
+the rest **partial**. Every weight is a constant in that file.
 
-
- 
-## Scope: what counts as a AI/Data job
-
-**Data:** data engineer, data analyst, data scientist, data architect, analytics engineer, DWH / ETL, data governance, data consultant, BI developer.
-
-**AI:** AI engineer, GenAI / LLM, ML engineer, MLOps, AI consultant, AI research.
-
-**Excluded:**  Titles saying "AI"/"KI" and naming no role, Data centre infrastructure, General software, cloud and DevOps engineering, 
-Speculative applications.
-
-Note: Excluded rows land in `silver.excluded` so the decision stays auditable.
-
-## Architecture of the pipeline
+## How it runs
 
 ```
-Adzuna API              de · at · ch, 16 job titles
+Adzuna API        de · at · ch, 16 searches, ~100 calls a run
     │
     ▼
-Unity Catalog volume    raw JSON cached, one file per query
+src/adzuna.py     sorted newest first, cached per day under raw/
     │
     ▼
-Auto Loader             trigger availableNow
+src/pipeline.py   merge searches → parse → quality rules → dedupe →
+    │             classify (src/classify.py) → skills (src/matcher.py)
+    │             → fit (src/fit.py) → the site's JSON files
+    ▼
+docs/data/*.json  committed by the workflow; state/ keeps the registry
     │
     ▼
-BRONZE    Delta         append-only, every snapshot preserved
-    │
-    ▼
-SILVER    Delta         parsed, classified, scope-filtered,
-    │                   deduplicated, quality-gated
-    ▼
-GOLD      Delta         aggregates + daily history,
-    │                   postings_public (the one row-level table)
-    ▼
-docs/data/*.json        committed to this repo
-    │
-    ▼
-GitHub Pages            static site, no backend
+GitHub Pages      docs/, static, no backend
 ```
 
+`.github/workflows/refresh.yml` runs at 05:30 UTC on weekdays. Adzuna's free
+key allows about 2,500 calls a month, so each run is capped at 100
+(`ADZUNA_MAX_CALLS`). Big searches keep only their newest postings, and
+`meta.json` lists which ones were cut.
 
-## Limitations of this tracker
+### Setup
 
+1. Get an `app_id` and `app_key` at [developer.adzuna.com](https://developer.adzuna.com).
+2. Add them as repository secrets `ADZUNA_APP_ID` and `ADZUNA_APP_KEY`
+   (Settings → Secrets and variables → Actions).
+3. Set Pages to deploy from `main`, folder `/docs` (Settings → Pages).
+4. Run **refresh data** once from the Actions tab.
 
-- **`created` is the aggregator's date**, possibly when it indexed the posting rather than when the employer published it.
-- **Descriptions are capped at 500 characters** and 99.6% are truncated. Tool counts measure *mentioned in the title or opening paragraph* - a floor, not a requirement rate. The window is identical for every posting, so comparing tools holds; absolute rates do not.
-- **AI counts are a floor**, for the reason in the scope table. The dropped share is printed on every run of `03_silver_clean.py`; if it climbs, the six rules are going stale.
-- **A posting in the browser is not necessarily open.** It was live at the last refresh. Nothing re-checks whether it has since been filled or withdrawn.
-- **There is no remote or on-site distinction.** The aggregator returns a single city per listing and no remote flag, so the pipeline cannot tell a remote job from an on-site one.
-- **There is no remote or on-site distinction.** This means, that jobs that are listed in more than one city, are also displayed in more than one city. I thought about putting up a threshold number, but the inflation is fairly minimal so I left it like this.
+To run it locally:
 
-
-## Running it yourself
-
-1. Get an `app_id` and `app_key` from `developer.adzuna.com`.
-2. Create a Databricks workspace (Free Edition is enough) and run `notebooks/setup_uc.py` to create the catalog, schemas and volumes.
-3. Put credentials in the `conf` volume, outside this repo:
-
-```python
-pathlib.Path("/Volumes/jobs/bronze/conf/adzuna.json").write_text(
-    json.dumps({"app_id": "...", "app_key": "..."}))
+```bash
+pip install -r requirements.txt
+export ADZUNA_APP_ID=... ADZUNA_APP_KEY=...
+python src/pipeline.py
+pytest tests/
 ```
 
-4. Import `notebooks/` and run 01 to 06 in order.
-5. Chain them into a daily Databricks Workflow-
+### Tuning
 
+- Searches and how deep each is read: `QUERIES` in `src/adzuna.py`.
+- Role rules: `src/classify.py`, with test cases in `tests/test_classify.py`.
+- Skills: `src/skills_dictionary.py`.
+- Fit weights: `src/fit.py`.
 
-## Tech stack
+## Limitations
 
-![Databricks](https://img.shields.io/badge/Databricks_Free_Edition-221F1A?style=flat-square&logo=databricks&logoColor=E56743)
-![Python](https://img.shields.io/badge/Python-221F1A?style=flat-square&logo=python&logoColor=E3A23F)
-![Delta Lake](https://img.shields.io/badge/Delta_Lake-221F1A?style=flat-square&logo=databricks&logoColor=6FA37F)
-![PySpark](https://img.shields.io/badge/PySpark-221F1A?style=flat-square&logo=apachespark&logoColor=E56743)
-![Databricks Workflows](https://img.shields.io/badge/Databricks_Workflows-221F1A?style=flat-square&logo=databricks&logoColor=E3A23F)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-221F1A?style=flat-square&logo=githubactions&logoColor=6FA37F)
-![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-221F1A?style=flat-square&logo=github&logoColor=E56743)
-![SQL](https://img.shields.io/badge/SQL-221F1A?style=flat-square&logo=postgresql&logoColor=6FA37F)
-![pytest](https://img.shields.io/badge/pytest-221F1A?style=flat-square&logo=pytest&logoColor=6FA37F)
-![JavaScript](https://img.shields.io/badge/Vanilla_JS-221F1A?style=flat-square&logo=javascript&logoColor=E3A23F)
+- **One aggregator is not the whole market**, and its coverage is uneven
+  across the three countries.
+- **Descriptions are cut at about 500 characters**, mostly company intro.
+  Skills, remote/hybrid and German-level flags only see that part, so they
+  are floors.
+- **No remote flag from the source.** "Remote" means the title or snippet
+  says so; a blank means not stated.
+- **A listed posting is not necessarily open.** It was live at the last
+  run.
+- **Multi-location jobs appear once per city.**
 
+`notebooks/` holds the original Databricks pipeline. This fork no longer
+runs it.
 
 ## Licence
 
-MIT. The underlying job data belongs to Adzuna and its source boards.
-
----
-
-<p align="center">Built by <b>Christoph Ruckensteiner</b> · <a href="https://www.linkedin.com/in/cruckensteiner112">LinkedIn</a> · <a href="https://github.com/Chrisinho8">GitHub</a></p>
+MIT, as the original. The job data belongs to Adzuna and its source boards.

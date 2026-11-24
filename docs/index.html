@@ -3,74 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DACH Data Job Market Tracker · Christoph Ruckensteiner</title>
+<title>DACH Job Search · iOS, Kotlin/Spring and AI roles</title>
 <meta name="description"
-      content="Daily tracker of AI and data job postings in Germany,
-               Austria and Switzerland, built by Christoph Ruckensteiner
-               on a Databricks and Delta Lake pipeline.">
-<meta name="author" content="Christoph Ruckensteiner">
-<link rel="canonical" href="https://chrisinho8.github.io/DACH-data-job-market/">
+      content="Daily job search across Germany, Austria and Switzerland
+               for senior iOS, Kotlin/Spring Boot backend and AI roles,
+               scored against one CV. Forked from Christoph
+               Ruckensteiner's DACH data job market tracker.">
+<link rel="canonical" href="https://gabrielcontee.github.io/DACH-data-market/">
 <meta property="og:title"
-      content="DACH Data Job Market Tracker by Christoph Ruckensteiner">
+      content="DACH Job Search: iOS, Kotlin/Spring and AI roles">
 <meta property="og:description"
-      content="AI and data job postings in Germany, Austria and
-               Switzerland, tracked daily.">
+      content="Senior iOS, Kotlin/Spring Boot backend and AI job postings
+               in Germany, Austria and Switzerland, scored for CV fit.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://chrisinho8.github.io/DACH-data-job-market/assets/og.png">
-<meta property="og:url" content="https://chrisinho8.github.io/DACH-data-job-market/">
-<meta name="twitter:card" content="summary_large_image">
-<!-- Tells search engines who built this and links the real name to
-     the LinkedIn and GitHub profiles (schema.org structured data). -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://chrisinho8.github.io/DACH-data-job-market/#christoph",
-      "name": "Christoph Ruckensteiner",
-      "alternateName": ["Chris Ruckensteiner", "Chrisinho8"],
-      "url": "https://www.linkedin.com/in/cruckensteiner112",
-      "sameAs": [
-        "https://www.linkedin.com/in/cruckensteiner112",
-        "https://github.com/Chrisinho8"
-      ],
-      "knowsAbout": ["Data engineering", "Databricks", "Delta Lake",
-                     "PySpark", "SQL", "Python"]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://chrisinho8.github.io/DACH-data-job-market/#website",
-      "url": "https://chrisinho8.github.io/DACH-data-job-market/",
-      "name": "DACH Data Job Market Tracker",
-      "inLanguage": "en",
-      "author": { "@id": "https://chrisinho8.github.io/DACH-data-job-market/#christoph" },
-      "creator": { "@id": "https://chrisinho8.github.io/DACH-data-job-market/#christoph" }
-    },
-    {
-      "@type": "Dataset",
-      "@id": "https://chrisinho8.github.io/DACH-data-job-market/#dataset",
-      "name": "DACH AI and Data Job Market Tracker",
-      "description": "Daily snapshots of AI and data job postings in Germany, Austria and Switzerland from the Adzuna API, classified into 15 roles and aggregated through a Databricks and Delta Lake pipeline by Christoph Ruckensteiner.",
-      "url": "https://chrisinho8.github.io/DACH-data-job-market/",
-      "creator": { "@id": "https://chrisinho8.github.io/DACH-data-job-market/#christoph" },
-      "isAccessibleForFree": true,
-      "spatialCoverage": ["Germany", "Austria", "Switzerland"],
-      "temporalCoverage": "2026-07-29/..",
-      "keywords": ["data engineer jobs", "AI jobs", "job market",
-                   "Germany", "Austria", "Switzerland", "DACH",
-                   "Databricks", "Delta Lake"],
-      "codeRepository": "https://github.com/Chrisinho8/DACH-data-job-market",
-      "distribution": [{
-        "@type": "DataDownload",
-        "encodingFormat": "application/json",
-        "contentUrl": "https://chrisinho8.github.io/DACH-data-job-market/data/postings.json"
-      }]
-    }
-  ]
-}
-</script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta property="og:url" content="https://gabrielcontee.github.io/DACH-data-market/">
+<meta name="robots" content="noindex">
+<!-- Pinned with a hash: an unversioned CDN URL would run whatever gets
+     published next. To upgrade, change the version and replace the hash
+     with the file's "hash" from
+     data.jsdelivr.com/v1/packages/npm/chart.js@<version>?structure=flat -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.6.1/dist/chart.umd.min.js"
+        integrity="sha256-hzZMwrKnamaEkp59a4Cxiol3lNs4QAyv8fzxeRxpJdI="
+        crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css?v=35">
 <style>
 
@@ -192,7 +146,7 @@
   .ptable .tag.on{background:rgba(229,103,67,.16);color:#B04A28}
 
   .pfilters{display:grid;gap:10px;margin:14px 0 10px;
-            grid-template-columns:repeat(5,1fr) auto}
+            grid-template-columns:repeat(4,1fr)}
   .pfilters input{grid-column:1/-1}
   .pfilters input,.pfilters select,.pfilters button{
     width:100%;font:inherit;font-size:13.5px;padding:9px 11px;
@@ -215,7 +169,7 @@
   .ptable-wrap{overflow-x:auto;border:1px solid var(--line);
                border-radius:13px;box-shadow:var(--shadow)}
   .ptable{width:100%;border-collapse:collapse;font-size:13.5px;
-          min-width:680px}
+          min-width:760px}
   .ptable th{text-align:left;font-size:12.5px;color:#8A857C;
              font-weight:600;
              padding:9px 12px;border-bottom:1px solid #EAE6DC;
@@ -233,6 +187,22 @@
   .ptable .dot{display:inline-block;width:8px;height:8px;
                border-radius:50%;margin-right:6px;vertical-align:0}
   .ptable .stale{color:#8A4A2E;font-weight:600}
+  /* CV fit badge, gap warnings and work mode */
+  .ptable .fitb{display:inline-flex;align-items:baseline;gap:5px;
+    white-space:nowrap;font-size:12px;font-weight:700;padding:2px 8px;
+    border-radius:999px}
+  .ptable .fitb small{font-size:11px;font-weight:600;opacity:.75;
+    font-variant-numeric:tabular-nums}
+  .ptable .fit-strong{background:rgba(111,163,127,.20);color:#2F6A43}
+  .ptable .fit-partial{background:rgba(92,135,168,.16);color:#34597A}
+  .ptable .fit-ai{background:rgba(229,103,67,.15);color:#A44221}
+  .ptable .warns{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+  .ptable .warn{font-size:11px;font-weight:700;padding:2px 7px;
+    border-radius:5px;background:#FBEBDD;color:#8A4A2E}
+  .ptable .wm{display:inline-block;margin-left:6px;font-size:11px;
+    font-weight:700;padding:1px 6px;border-radius:5px;
+    background:#EEF3F6;color:#3E6480}
+  .ptable .wm-remote{background:#EAF3EC;color:#2F6A43}
   .ptable .empty{padding:26px 12px;text-align:center;color:#8A857C}
   /* pagination */
   .ppag{display:flex;flex-wrap:wrap;justify-content:center;
@@ -560,7 +530,7 @@
 
 <nav class="topnav">
   <div class="wrap navwrap">
-    <a class="brand" href="#overview">DACH AI/Data job market</a>
+    <a class="brand" href="#overview">DACH job search</a>
     <div class="navlinks">
       <a href="#geo">Map</a>
       <a href="#postings-section">Postings</a>
@@ -578,44 +548,19 @@
       <img class="hdmark" src="assets/dach.svg" alt=""
            width="86" height="107" loading="eager"
            onerror="this.remove()">
-      <h1>What's up with the
-          AI/data job market in the DACH region?</h1>
+      <h1>iOS, Kotlin/Spring and AI jobs
+          in the DACH region, scored for CV fit</h1>
     </div>
     <p class="sub">
-      Every day at 08:00 UTC+2, data from job-postings across all three DACH
-      countries gets pulled from an API (Adzuna), loaded into a Delta Lake
-      pipeline in Databricks, and aggregated for various insights.
+      Every weekday morning a GitHub Action pulls senior iOS, Kotlin/Spring
+      Boot and AI postings for Germany, Austria and Switzerland from the
+      Adzuna API, classifies them by title and scores each one against the
+      CV. The table opens on Vienna plus anything that mentions remote.
     </p>
     <p class="byline">
-      Built by <a href="https://www.linkedin.com/in/cruckensteiner112"
-                  target="_blank" rel="noopener">Christoph
-      Ruckensteiner<svg class="li" viewBox="0 0 24 24" width="16"
-        height="16" aria-hidden="true" focusable="false"><rect width="24"
-        height="24" rx="5" fill="#0077B5"/><path fill="#fff"
-        d="M7.1 9.2H4.4V19h2.7V9.2zM5.75 8.05a1.57 1.57 0 1 0 0-3.13
-        1.57 1.57 0 0 0 0 3.13zM19.6 19h-2.7v-4.78c0-1.14-.02-2.6-1.59-2.6
-        -1.59 0-1.83 1.24-1.83 2.52V19h-2.7V9.2h2.59v1.34h.04c.36-.68
-        1.24-1.4 2.55-1.4 2.73 0 3.24 1.8 3.24 4.13V19z"/></svg
-        ><span class="sr-only"> (LinkedIn)</span></a><a class="gh" href="https://github.com/Chrisinho8"
-         target="_blank" rel="noopener" title="GitHub"><svg class="li"
-        viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"
-        focusable="false"><rect width="24" height="24" rx="5"
-        fill="#24292F"/><path fill="#fff" transform="translate(4 4)"
-        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-        0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82
-        -1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
-        2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31
-        -1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32
-        -.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92
-        .08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73
-        .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0
-        16 8c0-4.42-3.58-8-8-8z"/></svg><span class="sr-only">GitHub</span></a><a class="gh" href="#" data-mail="christoph.rucki|gmail.com"
-         title="Email"><svg class="li" viewBox="0 0 24 24" width="16"
-        height="16" aria-hidden="true" focusable="false"><rect width="24"
-        height="24" rx="5" fill="#EA4335"/><path fill="none" stroke="#fff"
-        stroke-width="1.8" stroke-linejoin="round"
-        d="M5.5 7.5h13v9h-13zM5.9 7.9 12 12.6l6.1-4.7"/></svg><span
-        class="sr-only">Email</span></a>
+      Forked from <a href="https://github.com/Chrisinho8/DACH-data-job-market"
+         target="_blank" rel="noopener">Christoph Ruckensteiner's DACH
+      data job market tracker</a> (MIT)
     </p>
   </div>
 </header>
@@ -640,7 +585,7 @@
             Last updated
           </span>
           <b id="kpi-when">-</b>
-          <span class="sub2">refreshed every day at 08:00 UTC+2</span>
+          <span class="sub2">refreshed on weekdays around 06:30 Vienna time</span>
         </div>
       </div>
       <div id="kpi" class="ovw-row"></div>
@@ -713,7 +658,15 @@
 
 
   <section id="postings-section" hidden>
-    <h2>All current job postings</h2>
+    <h2>Current job postings</h2>
+    <p class="note">
+      <strong>Fit</strong> scores each posting from 0 to 100 against the
+      CV: the role, the skills it names, seniority, and the known gaps
+      (German at C1 or above, database-heavy work, model training). It
+      reads only the title and the first ~500 characters of the advert,
+      so open the advert before you rule anything out. Weights live in
+      <code>src/fit.py</code>.
+    </p>
 
     <div class="pfilters-bar">
       <span class="fcount" id="pfiltercount" hidden></span>
@@ -745,11 +698,21 @@
       <input id="pq" type="search" autocomplete="off"
              placeholder="Search title, employer or skill…"
              aria-label="Search postings by title, employer or skill">
+      <select id="pwhere" aria-label="Filter by place and work mode">
+        <option value="vienna+remote" selected>Vienna or remote</option>
+        <option value="vienna">Vienna only</option>
+        <option value="austria">Austria</option>
+        <option value="remote">Mentions remote</option>
+        <option value="hybrid">Mentions hybrid</option>
+        <option value="">Everywhere</option>
+      </select>
+      <select id="pfit"  aria-label="Filter by CV fit"></select>
       <select id="pfam"  aria-label="Filter by role"></select>
       <select id="pctry" aria-label="Filter by country"></select>
       <select id="pcity" aria-label="Filter by city"></select>
       <select id="psen"  aria-label="Filter by seniority"></select>
       <select id="psort" aria-label="Sort postings">
+        <option value="fit" selected>Best fit first</option>
         <option value="new">Newest first</option>
         <option value="old">Oldest first</option>
       </select>
@@ -762,7 +725,8 @@
         <thead>
           <tr>
             <th>Title</th><th>Employer</th><th>City</th>
-            <th>Role</th><th>Level</th><th class="num">Days open</th>
+            <th>Role</th><th>Fit</th><th>Level</th>
+            <th class="num">Days open</th>
           </tr>
         </thead>
         <tbody id="pbody"></tbody>
@@ -810,10 +774,11 @@
   <section id="trend-section" hidden>
     <h2>How the market moves over time</h2>
     <p class="note">
-      Everyday a point is added, nothing is overwritten. Days open
-      and posting volume come from the same daily runs that feed the
-      rest of the page. Tracking started on 08-08-2026. Shaded days had
-      no pipeline run and stay empty; nothing is interpolated.
+      Every weekday run adds a point; nothing is overwritten. Days open
+      and posting volume come from the same runs that feed the rest of
+      the page. Tracking started with this fork's first run. Shaded days
+      had no run (weekends included) and stay empty; nothing is
+      interpolated.
     </p>
     <div class="mapctl">
       <div class="ctlrow ctlrow-roles">
@@ -839,7 +804,7 @@
   </section>
 
   <section id="newposts-section" hidden>
-    <h2>New job postings per day (tracking since 27.08.2026)
+    <h2>New job postings per day
       <span class="np-since"></span></h2>
     <p class="note">
       Counted by the day Adzuna lists the advert. Each colour is one
@@ -917,7 +882,7 @@
     <h2>Which technical skills do postings ask for?</h2>
     <p class="note">
       Each bar is the share of postings naming that tool, so the bars do
-      not add to 100%. One posting can ask for Python, SQL and Airflow.
+      not add to 100%. One posting can ask for Swift, Kotlin and Kubernetes.
       <strong>These are mention rates, not requirement rates:</strong>
       descriptions are truncated at 500 characters, so a tool only
       counts if it appears early. Roles with three or fewer extracted
@@ -1044,9 +1009,9 @@
     <h2>The pipeline's own error rates</h2>
     <p class="note" id="n14-note">
       Most dashboards do not publish how wrong they might be. The first
-      two are measured on every run. The two matcher scores are
-      <strong>not</strong>: they come from a manual spot check on a
-      hand-labelled sample and are not recomputed often.
+      two are measured on every run. The two matcher scores would come
+      from a manual spot check on a hand-labelled sample; none has been
+      done for this fork's skills dictionary yet.
     </p>
     <div id="n14_quality" class="stats"></div>
   </section>
@@ -1081,19 +1046,29 @@
           keyword rules, not from the description, which the aggregator
           truncates.</li>
       <li><strong>Multi-location jobs are counted more than
-          once.</strong> The aggregator returns one city per listing
-          and no remote flag, so a role advertised in a dozen offices
-          becomes a dozen rows. This inflates the headline total by
-          roughly 490 postings.</li>
+          once.</strong> The aggregator returns one city per listing,
+          so a role advertised in a dozen offices becomes a dozen rows.</li>
+      <li><strong>Remote and hybrid are read off the snippet.</strong>
+          The aggregator has no remote flag, so "remote" and "hybrid"
+          mean the title or the first ~500 characters say so. A blank
+          means not stated, not on site.</li>
+      <li><strong>The fit score is a first sort, not a verdict.</strong>
+          It cannot see requirements past the first paragraph, so a
+          German C1 or SQL requirement further down goes unflagged.</li>
+      <li><strong>Searches are capped to fit the free API quota.</strong>
+          About 100 calls per weekday run; big searches keep only their
+          newest postings, and the run's meta.json lists which.</li>
       <li><strong>The AI numbers are a floor, not a total.</strong>
           Titles that say only "AI" or "KI" without naming a role are
           dropped, so the six AI families cover every posting that
           describes itself, not every posting that mentions AI.</li>
+      <li><strong>Out of scope on purpose:</strong> data and BI roles,
+          Android-only, Flutter and React Native roles, junior roles,
+          and non-engineering jobs (product, sales, QA, design).</li>
  
       <li><strong>Entry programmes are excluded</strong> (Ausbildung,
           duales Studium, Werkstudent, Praktikum, Trainee), along with
-          Controlling and finance roles and data-centre infrastructure
-          jobs pulled in by keyword search.</li>
+          Controlling and finance roles pulled in by keyword search.</li>
 
 
       <li><strong>Listings link out, they are not republished.</strong>
@@ -1110,35 +1085,9 @@
 
   <footer>
     <p class="byline">
-      Built by <a href="https://www.linkedin.com/in/cruckensteiner112"
-                  target="_blank" rel="noopener">Christoph
-      Ruckensteiner<svg class="li" viewBox="0 0 24 24" width="16"
-        height="16" aria-hidden="true" focusable="false"><rect width="24"
-        height="24" rx="5" fill="#0077B5"/><path fill="#fff"
-        d="M7.1 9.2H4.4V19h2.7V9.2zM5.75 8.05a1.57 1.57 0 1 0 0-3.13
-        1.57 1.57 0 0 0 0 3.13zM19.6 19h-2.7v-4.78c0-1.14-.02-2.6-1.59-2.6
-        -1.59 0-1.83 1.24-1.83 2.52V19h-2.7V9.2h2.59v1.34h.04c.36-.68
-        1.24-1.4 2.55-1.4 2.73 0 3.24 1.8 3.24 4.13V19z"/></svg
-        ><span class="sr-only"> (LinkedIn)</span></a><a class="gh" href="https://github.com/Chrisinho8"
-         target="_blank" rel="noopener" title="GitHub"><svg class="li"
-        viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"
-        focusable="false"><rect width="24" height="24" rx="5"
-        fill="#24292F"/><path fill="#fff" transform="translate(4 4)"
-        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-        0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82
-        -1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87
-        2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31
-        -1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32
-        -.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92
-        .08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73
-        .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0
-        16 8c0-4.42-3.58-8-8-8z"/></svg><span class="sr-only">GitHub</span></a><a class="gh" href="#" data-mail="christoph.rucki|gmail.com"
-         title="Email"><svg class="li" viewBox="0 0 24 24" width="16"
-        height="16" aria-hidden="true" focusable="false"><rect width="24"
-        height="24" rx="5" fill="#EA4335"/><path fill="none" stroke="#fff"
-        stroke-width="1.8" stroke-linejoin="round"
-        d="M5.5 7.5h13v9h-13zM5.9 7.9 12 12.6l6.1-4.7"/></svg><span
-        class="sr-only">Email</span></a>
+      Forked from <a href="https://github.com/Chrisinho8/DACH-data-job-market"
+         target="_blank" rel="noopener">Christoph Ruckensteiner's DACH
+      data job market tracker</a> (MIT)
       &middot;
       Data from <a href="https://developer.adzuna.com"
                    target="_blank" rel="noopener">Adzuna</a>
@@ -1154,7 +1103,7 @@
 
 <div id="maptip" role="tooltip"></div>
 
-<script src="app.js?v=31"></script>
+<script src="app.js?v=33"></script>
 
 
 

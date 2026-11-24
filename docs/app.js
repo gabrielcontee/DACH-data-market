@@ -25,6 +25,10 @@ const ROLE_COLOUR = {
   "ai consultant": AMBER,  "ai research":   SAND,
   "ai / ml":       CORAL,          /* pre-split snapshots */
 
+  /* your stack: the cool end, so it reads as one block against AI */
+  "ios engineer":            STEEL,  "kotlin / spring backend": SAGE,
+  "java backend":            TEAL,   "mobile engineer":         INDIGO,
+
   "data engineer":      STEEL,  "data analyst":    SAGE,
   "data scientist":     TEAL,   "data architect":  INDIGO,
   "analytics engineer": MOSS,   "dwh / etl":       OCEAN,
@@ -64,6 +68,9 @@ const SKILL_CAT_LABEL = {
   mlops:        "MLOps",
   genai:        "Generative AI",
   nlp_cv:       "NLP / computer vision",
+  mobile:       "Mobile",
+  backend:      "Backend",
+  testing:      "Testing",
   language:     "Languages",
   processing:   "Processing",
   streaming:    "Streaming",
@@ -104,7 +111,21 @@ const SKILL_LABEL = {
   synapse: "Synapse", tableau: "Tableau", tensorflow: "TensorFlow",
   terraform: "Terraform", vectordb: "Vector databases",
   vertexai: "Vertex AI", mlflow: "MLflow", bentoml: "BentoML",
-  keras: "Keras", wandb: "Weights & Biases", kubeflow: "Kubeflow"
+  keras: "Keras", wandb: "Weights & Biases", kubeflow: "Kubeflow",
+  /* mobile, backend and testing: the CV's stack */
+  ios: "iOS", swift: "Swift", swiftui: "SwiftUI", uikit: "UIKit",
+  objc: "Objective-C", tca: "TCA", xcode: "Xcode", fastlane: "Fastlane",
+  android: "Android", compose: "Jetpack Compose",
+  kmp: "Kotlin Multiplatform", flutter: "Flutter",
+  react_native: "React Native", accessibility: "Accessibility",
+  kotlin: "Kotlin", spring: "Spring Boot", microservices: "Microservices",
+  rest_api: "REST / OpenAPI", graphql: "GraphQL", grpc: "gRPC",
+  bff: "Backend for frontend", cache: "Redis / Hazelcast",
+  nodejs: "Node.js", golang: "Go", dotnet: ".NET",
+  jvm_testing: "JUnit / Kotest / MockK", ios_testing: "XCTest",
+  wiremock: "WireMock", appium: "Appium / BrowserStack",
+  gitops: "GitOps / Helm", observability: "Prometheus / Grafana",
+  ai_coding: "AI coding tools"
 };
 const slab = k => SKILL_LABEL[k] || String(k).replace(/_/g, " ");
 /* Generative-AI skills: the "genai" category of skill_demand.json,
@@ -243,6 +264,11 @@ const ROLE_LABEL = {
      of these ever slips past the RETIRED filter */
   "ai / ml":            "AI/ML (pre-split)",
   "ai (other)":         "AI, role unspecified (retired)",
+
+  "ios engineer":            "iOS Engineer",
+  "kotlin / spring backend": "Kotlin / Spring Backend",
+  "java backend":            "Java Backend",
+  "mobile engineer":         "Mobile Engineer",
 
   "data engineer":      "Data Engineer",
   "data scientist":     "Data Scientist",
@@ -449,9 +475,7 @@ const isoWeek  = s => {
 /* Why the pipeline stopped. The gaps themselves are read off the run
    history; this list only says why one happened, so every chart can
    label it. Add an entry if it ever happens again.                 */
-const OUTAGES = [
-  { from: "2026-10-11", to: "2026-10-25", why: "account issues" }
-];
+const OUTAGES = [];
 const outageIn = (a, b) =>
   OUTAGES.find(o => a <= o.to && b >= o.from) || null;
 const noRunLabel = o => `No runs ${fRange(o.from, o.to)} · due to ${o.why}`;
@@ -563,18 +587,26 @@ get("meta").then(m => {
   set("f-median", m.median_age_days);
   if (m.updated) set("cav_updated", euroDate(m.updated));
 
-  const ratio = m.median_age_days
-    ? (m.avg_age_days / m.median_age_days).toFixed(1) : null;
+  const nf0 = v => Number(v || 0).toLocaleString("en-US");
+  const has = k => m[k] !== undefined && m[k] !== null;
 
-  const cards = [
-    [CORAL, m.live_postings.toLocaleString(), "Live postings",
+  /* The fit and Vienna counts only exist in snapshots from this fork's
+     pipeline; an older meta.json falls back to the original cards. */
+  const cards = has("fit_strong") ? [
+    [CORAL, nf0(m.live_postings), "Live postings",
+     `${nf0(m.employers)} employers in DE, AT and CH`],
+    [SAGE, nf0(m.fit_strong), "Strong CV fit",
+     `${nf0(m.fit_partial)} partial · ${nf0(m.fit_ai)} AI roles`],
+    [STEEL, nf0(m.vienna), "In Vienna",
+     `${nf0(m.vienna_strong)} of them a strong fit`],
+    [CLAY, nf0(m.remote_mentioned), "Mention remote",
+     `${nf0(m.hybrid_mentioned)} more mention hybrid`],
+  ] : [
+    [CORAL, nf0(m.live_postings), "Live postings",
      "Germany, Austria and Switzerland"],
-    [STEEL, m.employers.toLocaleString(), "Employers",
-     "advertising at least one data role"],
-    [CLAY, Math.round(m.avg_age_days) + " days", "Mean days open",
-     ratio ? `${ratio}× the median of ${m.median_age_days} days`
-           : ""],
-    [SAGE, "…", "Advertised as junior", "loading"],
+    [STEEL, nf0(m.employers), "Employers",
+     "advertising at least one matching role"],
+    [CLAY, Math.round(m.avg_age_days) + " days", "Mean days open", ""],
   ];
 
   /* one divided row inside the overview panel; the colour each
@@ -588,20 +620,6 @@ get("meta").then(m => {
         <span class="sub2">${sub}</span>
       </div>`).join("");
   render();
-
-  /* the junior card needs role_breakdown, so fill it late */
-  get("role_breakdown").then(rb => {
-    if (!rb || !rb.length) return;
-    const tot = rb.reduce((s, r) => s + r.n_postings, 0);
-    const jr  = rb.filter(r => r.seniority === "junior")
-                  .reduce((s, r) => s + r.n_postings, 0);
-    const slot = cards.findIndex(c => c[2] === "Advertised as junior");
-    if (slot < 0) return;
-    cards[slot] = [SAGE, (100 * jr / tot).toFixed(1) + "%",
-                "Advertised as junior",
-                `${jr.toLocaleString()} of ${tot.toLocaleString()} postings`];
-    render();
-  });
 });
 
 /* ---------------- age strip ---------------- */
@@ -1855,14 +1873,36 @@ function pFill(sel, values, allLabel, label) {
       .join("");
 }
 
+/* Vienna first, per the CV plan: the default view is Vienna plus
+   anything that says remote, the only other jobs worth a look (at a
+   20% premium). work_mode comes from the title and the first ~500
+   characters of the advert, so "" means "not stated", not "on site". */
+const isVienna = r => r.country === "at" && r.city === "wien";
+function inWhere(r, where) {
+  if (where === "vienna+remote") return isVienna(r) || r.work_mode === "remote";
+  if (where === "vienna") return isVienna(r);
+  if (where === "austria") return r.country === "at";
+  if (where === "remote") return r.work_mode === "remote";
+  if (where === "hybrid") return r.work_mode === "hybrid";
+  return true;
+}
+
+const FIT_LABEL = { strong: "Strong fit", partial: "Partial fit",
+                    ai: "AI role" };
+const FLAG_LABEL = { german_c1: "German C1+", sql_heavy: "SQL-heavy" };
+
 function pFiltered() {
   const q    = ($p("pq").value || "").trim().toLowerCase();
   const fam  = $p("pfam").value;
   const ctry = $p("pctry").value;
   const city = $p("pcity").value;
   const sen  = $p("psen").value;
+  const where = ($p("pwhere") || {}).value || "";
+  const fitf  = ($p("pfit") || {}).value || "";
 
   let out = POSTINGS.filter(r =>
+    (!where || inWhere(r, where)) &&
+    (!fitf || r.fit_label === fitf) &&
     (!fam  || r.role_family === fam) &&
     (!ctry || r.country     === ctry) &&
     /* keyed country|city: Baden exists in all three countries, and
@@ -1872,13 +1912,16 @@ function pFiltered() {
     (!PSKILLS.size || pHits(r) > 0) &&
     (!q    || (r.title   || "").toLowerCase().includes(q)
            || (r.company || "").toLowerCase().includes(q)
-           || rSkills(r).some(sk => sk.includes(q))));
+           || rSkills(r).some(sk => sk.includes(q) ||
+                                    slab(sk).toLowerCase().includes(q))));
 
   const sort = $p("psort").value;
   const byTitle = (a, b) =>
     String(a.title).localeCompare(String(b.title), "de");
+  const newest = (a, b) => pDate(b).localeCompare(pDate(a));
   const base =
-    sort === "old" ? (a, b) => pDate(a).localeCompare(pDate(b))
+    sort === "fit" ? (a, b) => ((b.fit ?? 0) - (a.fit ?? 0)) || newest(a, b)
+  : sort === "old" ? (a, b) => pDate(a).localeCompare(pDate(b))
   : sort === "age" ? (a, b) => b.age_days - a.age_days
   : sort === "az"  ? byTitle
   :                  (a, b) => pDate(b).localeCompare(pDate(a));
@@ -1966,26 +2009,39 @@ function pRender() {
     const tags = sk.length
       ? `<div class="tags">` +
         shown.map(x =>
-          `<span class="tag${PSKILLS.has(x) ? " on" : ""}">${esc(x)}</span>`)
+          `<span class="tag${PSKILLS.has(x) ? " on" : ""}">${esc(slab(x))}</span>`)
           .join("") +
         (sk.length > shown.length
           ? `<span class="tag">+${sk.length - shown.length}</span>` : "") +
         `</div>`
       : "";
+    /* gaps from the CV plan, shown where the eye lands first */
+    const warn = (r.flags || []).filter(f => FLAG_LABEL[f]).map(f =>
+      `<span class="warn">${esc(FLAG_LABEL[f])}</span>`).join("");
+    const fl = r.fit_label && FIT_LABEL[r.fit_label]
+      ? `<span class="fitb fit-${esc(r.fit_label)}"
+               title="Fit score ${esc(r.fit)} of 100">` +
+        `${esc(FIT_LABEL[r.fit_label])}<small>${esc(r.fit)}</small></span>`
+      : "";
     return `<tr>
-      <td><a href="${r.url}" target="_blank"
-             rel="noopener nofollow">${esc(r.title)}</a>${tags}</td>
+      <td><a href="${esc(safeUrl(r.url))}" target="_blank"
+             rel="noopener nofollow">${esc(r.title)}</a>` +
+        `${warn ? `<div class="warns">${warn}</div>` : ""}${tags}</td>
       <td>${esc(r.company)}${r.is_agency
             ? ' <span class="flag">agency</span>' : ""}</td>
       <td>${esc(cityName(r.city))}
-          <span class="flag">${String(r.country).toUpperCase()}</span></td>
+          <span class="flag">${String(r.country).toUpperCase()}</span>` +
+        `${r.work_mode
+            ? `<span class="wm wm-${esc(r.work_mode)}">${esc(r.work_mode)}</span>`
+            : ""}</td>
       <td class="fam"><span class="dot"
             style="background:${rcol(fam, 0)}"></span>${rlab(fam)}</td>
+      <td>${fl}</td>
       <td>${esc(cap(r.seniority))}</td>
       <td class="num"${stale}>${r.age_days}</td>
     </tr>`;
   }).join("")
-    : `<tr><td colspan="6" class="empty">
+    : `<tr><td colspan="7" class="empty">
          No postings match those filters.</td></tr>`;
 
   $p("pcount").textContent = rows.length
@@ -1995,7 +2051,7 @@ function pRender() {
       (last > 1 ? `  ·  page ${ppage} of ${last}` : "") +
       (PSKILLS.size
         ? `  ·  naming ${PSKILLS.size > 1 ? "any of " : ""}` +
-          `${[...PSKILLS].join(", ")}` +
+          `${[...PSKILLS].map(slab).join(", ")}` +
           (PSKILLS.size > 1 ? ", best matches first" : "") : "") +
       (rows.length < POSTINGS.length
         ? `  ·  filtered from ${POSTINGS.length.toLocaleString()}` : "")
@@ -2014,6 +2070,21 @@ function esc(s) {
     '"': "&quot;", "'": "&#39;" }[c]));
 }
 
+/* Posting links come from the aggregator too. Only http(s) URLs get a
+   link: anything else (javascript:, data:, a broken string) becomes "#"
+   instead of running in the visitor's browser. The result still goes
+   through esc() wherever it lands in an attribute. */
+function safeUrl(u) {
+  if (!u) return "#";
+  try {
+    const url = new URL(String(u ?? ""), location.href);
+    return url.protocol === "https:" || url.protocol === "http:"
+      ? url.href : "#";
+  } catch {
+    return "#";
+  }
+}
+
 /* Entry point for the chart drill-downs. Reset by pCitiesRefresh so
    a drill-down never inherits a city left over from browsing. */
 let pCitiesRefresh = () => {};
@@ -2027,14 +2098,16 @@ function openPostings(filter) {
   $p("pctry").value = filter.country  || "";
   $p("pcity").value = "";
   $p("psen").value  = filter.seniority || "";
+  /* a chart drill-down is about the whole market, not the default
+     Vienna view */
+  if ($p("pwhere")) $p("pwhere").value = "";
+  if ($p("pfit")) $p("pfit").value = "";
   PSKILLS = new Set(filter.skills || []);
   pSkillsRefresh();
   pCitiesRefresh();
   if (filter.city) $p("pcity").value = filter.city;
-  /* A drill-down is a "show me these" gesture, so lead with the ones
-     that have been open longest: that is where a reader's eye goes
-     after clicking a bar about how long postings stay open. */
-  $p("psort").value = "age";
+  /* best fit first: this is a job search, not a market report */
+  $p("psort").value = "fit";
   ppage = 1;
   pRender();
   sec.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -2063,6 +2136,15 @@ get("postings").then(d => {
         ["junior", "mid", "senior"].filter(s =>
           POSTINGS.some(r => r.seniority === s)),
         "All levels");
+  pFill($p("pfit"),
+        ["strong", "partial", "ai"].filter(f =>
+          POSTINGS.some(r => r.fit_label === f)),
+        "Any fit", f => FIT_LABEL[f]);
+  /* older snapshots carry no fit score: sort them by date instead */
+  if (!POSTINGS.some(r => r.fit != null)) {
+    $p("psort").value = "new";
+    if ($p("pfit")) $p("pfit").closest("select").hidden = true;
+  }
 
   /* ---- skill picker ---------------------------------------------
      Chips, not a dropdown: a multi-select box hides what is selected
@@ -2090,7 +2172,7 @@ get("postings").then(d => {
     $p("pskillchips").innerHTML = list.map(x =>
       `<button type="button" data-skill="${esc(x)}"
                aria-pressed="${PSKILLS.has(x)}">` +
-      `${esc(x)}<span class="n">${skCount[x].toLocaleString()}</span>` +
+      `${esc(slab(x))}<span class="n">${skCount[x].toLocaleString()}</span>` +
       `</button>`).join("");
 
     const more = $p("pskillmore");
@@ -2157,7 +2239,8 @@ get("postings").then(d => {
   pCitiesRefresh = pCities;
   pCities();
 
-  ["pq", "pfam", "pctry", "pcity", "psen", "psort"].forEach(id =>
+  ["pq", "pwhere", "pfit", "pfam", "pctry", "pcity", "psen", "psort"]
+    .filter(id => $p(id)).forEach(id =>
     $p(id).addEventListener(id === "pq" ? "input" : "change", () => {
       if (id === "pctry") pCities();
       /* any filter change makes the old page number meaningless:
@@ -2167,9 +2250,9 @@ get("postings").then(d => {
     }));
 
   $p("pclear").addEventListener("click", () => {
-    ["pq", "pfam", "pctry", "pcity", "psen"]
-      .forEach(id => $p(id).value = "");
-    $p("psort").value = "new";
+    ["pq", "pwhere", "pfit", "pfam", "pctry", "pcity", "psen"]
+      .filter(id => $p(id)).forEach(id => $p(id).value = "");
+    $p("psort").value = POSTINGS.some(r => r.fit != null) ? "fit" : "new";
     PSKILLS.clear();
     pSkillChips();
     pCities();
@@ -2203,10 +2286,9 @@ get("skill_demand").then(d => {
 get("history").then(h => {
   if (!h) return;
 
-  /* Snapshots before 2026-08-08 were written while the AI split and
-     the staleness cap were still changing, so their numbers are not
-     comparable. The tracker starts on the first clean day. */
-  const MIN_DATE = "2026-08-08";
+  /* The fork's pipeline started a new history on its first run, so
+     every snapshot in history.json is comparable. */
+  const MIN_DATE = "";
   h = h.filter(r => iso(r.snapshot_date) >= MIN_DATE);
 
   const rows = (m, dim) => h.filter(r => r.metric === m &&
@@ -2528,13 +2610,14 @@ get("history").then(h => {
       ["Descriptions truncated",
        m.desc_truncated_pct != null
          ? m.desc_truncated_pct + "%" : "-"],
-      /* Not per-run. One-off manual spot check on a hand-labelled
-         sample; the pipeline does not recompute these. Hardcoded on
-         purpose so they are never mistaken for a live metric. */
+      /* Not per-run: a manual spot check on a hand-labelled sample,
+         written into meta.json by hand. The original tracker's 0.93 and
+         0.89 were for its data-role dictionary, so they are not reused
+         for this one. */
       ["Matcher precision (spot check)",
-       m.matcher_precision ?? "0.93"],
+       m.matcher_precision ?? "not measured"],
       ["Matcher recall (spot check)",
-       m.matcher_recall ?? "0.89"],
+       m.matcher_recall ?? "not measured"],
     ];
 
     el.innerHTML = cards.map(([k, v]) =>
@@ -3158,7 +3241,8 @@ get("history").then(h => {
 /* ===================================================== */
 
 (function () {
-  const NP_START = "2026-08-27";
+  /* the pipeline only counts adverts created since tracking began */
+  const NP_START = "";
   /* every Monday-to-Sunday week gets its own colour, rotating, keyed
      on the week itself so a week keeps its colour in every timeframe */
   const WEEK_PAL = [STEEL, AMBER, SAGE, PLUM, TEAL, CLAY, INDIGO, OLIVE];
@@ -3595,8 +3679,8 @@ function initRoleProfiles() {
     };
   }
 
-  /* chips: data roles, then AI roles, biggest first */
-  $("rp-chips").innerHTML = [["Data roles", r => !isAI(r)],
+  /* chips: your stack, then AI roles, biggest first */
+  $("rp-chips").innerHTML = [["Your stack", r => !isAI(r)],
                              ["AI roles", r => isAI(r)]].map(([lab, f]) =>
     `<div class="rp-chiprow"><span class="lab">${lab}</span>` +
     roles.filter(f).map(rf =>
@@ -3623,7 +3707,7 @@ function initRoleProfiles() {
     const ai = isAI(cur);
     $("rp-chips").querySelectorAll("button").forEach(b =>
       b.setAttribute("aria-pressed", String(b.dataset.rf === cur)));
-    $("rp-tag").textContent = ai ? "AI role" : "Data role";
+    $("rp-tag").textContent = ai ? "AI role" : "Your stack";
     $("rp-tag").style.background = ai ? CORAL : STEEL;
     $("rp-name").textContent = name;
     $("rp-posts").textContent = `See all ${nf(x.n)} ${name} postings ↓`;
@@ -3761,14 +3845,14 @@ get("history").then(h => {
   if (days.length < 14) return;
   const last = days[days.length - 1];
   const recent = days.slice(-7);
-  /* the same clean start as the trend chart */
-  const START = "2026-08-08";
+  /* the first run of this fork's pipeline */
+  const START = days[0];
 
   const earlierFor = span => span === "start"
     ? days.filter(d => d >= START).slice(0, 7)
     : days.filter(d => d <= addDays(last, -(+span))).slice(-7);
   const RANGES = [["7", "1 week"], ["14", "2 weeks"], ["30", "1 month"],
-                  ["60", "2 months"], ["start", "Since Aug"]]
+                  ["60", "2 months"], ["start", "Since start"]]
     .filter(([v]) => {
       const e = earlierFor(v);
       return e.length === 7 && e[6] < recent[0];

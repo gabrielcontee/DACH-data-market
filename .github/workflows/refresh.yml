@@ -1,0 +1,70 @@
+name: refresh data
+
+# Pulls today's postings from Adzuna, classifies and scores them against
+# the CV, and commits docs/data/ and state/ back to main, which GitHub
+# Pages serves. Weekdays only: Adzuna's free key allows about 2,500
+# calls a month, and each run spends up to ADZUNA_MAX_CALLS of them.
+#
+# Needs two repository secrets: ADZUNA_APP_ID and ADZUNA_APP_KEY.
+
+on:
+  schedule:
+    - cron: "30 5 * * 1-5"    # 05:30 UTC = 06:30 Vienna in winter
+  workflow_dispatch:          # "Run workflow" button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the tests first
+        run: pytest tests/ -q
+
+      - name: Today's date
+        id: day
+        run: echo "today=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      # A second run on the same day reuses the first run's responses
+      # instead of spending API calls again.
+      - name: Cache today's API responses
+        uses: actions/cache@v4
+        with:
+          path: raw
+          key: adzuna-raw-${{ steps.day.outputs.today }}-${{ github.run_id }}
+          restore-keys: adzuna-raw-${{ steps.day.outputs.today }}-
+
+      - name: Fetch and build
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          ADZUNA_MAX_CALLS: "100"
+        run: python src/pipeline.py
+
+      - name: Commit the new data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898733+github-actions[bot]@users.noreply.github.com"
+          git add docs/data state
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+            exit 0
+          fi
+          git commit -m "data refresh ${{ steps.day.outputs.today }}"
+          git pull --rebase origin main
+          git push origin HEAD:main
