@@ -243,6 +243,9 @@ const CITY_NAMES = {
 const cityName = s => {
   if (!s) return s;
   const k = String(s).toLowerCase();
+  /* the advert names no city: the pipeline writes "unknown" and the
+     city ranking "not specified" */
+  if (k === "unknown" || k === "not specified") return "No city";
   if (CITY_NAMES[k]) return CITY_NAMES[k];
   return k.split(/([ -])/).map(w =>
     w.charAt(0).toUpperCase() + w.slice(1)).join("");
