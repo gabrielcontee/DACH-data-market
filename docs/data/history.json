@@ -274,5 +274,275 @@
   "metric": "role_avg_age_days",
   "dimension": "ai research",
   "value": 74.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "live_postings",
+  "dimension": "all",
+  "value": 104.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "avg_age_days",
+  "dimension": "all",
+  "value": 65.5
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "pct_over_60d",
+  "dimension": "all",
+  "value": 39.4
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "fit_strong",
+  "dimension": "all",
+  "value": 19.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "ai_share_of_market",
+  "dimension": "all",
+  "value": 58.7
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "java",
+  "value": 28.8
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "llm",
+  "value": 6.7
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "ai_agents",
+  "value": 5.8
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "azure",
+  "value": 4.8
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "genai",
+  "value": 4.8
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "javascript",
+  "value": 3.8
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "accessibility",
+  "value": 2.9
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "kotlin",
+  "value": 2.9
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "python",
+  "value": 2.9
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "ios",
+  "value": 1.9
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "spring",
+  "value": 1.9
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "aws",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "cv",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "databricks",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "kubernetes",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "microservices",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "rag",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "rest_api",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "sap",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "skill_pct",
+  "dimension": "sql",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "java backend",
+  "value": 26.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "java backend",
+  "value": 58.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "mlops",
+  "value": 4.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "mlops",
+  "value": 141.5
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "ml engineer",
+  "value": 9.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "ml engineer",
+  "value": 121.3
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "ai consultant",
+  "value": 15.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "ai consultant",
+  "value": 50.5
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "kotlin / spring backend",
+  "value": 9.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "kotlin / spring backend",
+  "value": 83.7
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "ai engineer",
+  "value": 21.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "ai engineer",
+  "value": 44.2
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "genai / llm",
+  "value": 11.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "genai / llm",
+  "value": 29.2
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "mobile engineer",
+  "value": 6.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "mobile engineer",
+  "value": 112.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "ios engineer",
+  "value": 2.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "ios engineer",
+  "value": 70.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_count",
+  "dimension": "ai research",
+  "value": 1.0
+ },
+ {
+  "snapshot_date": "2026-11-25T00:00:00.000",
+  "metric": "role_avg_age_days",
+  "dimension": "ai research",
+  "value": 75.0
  }
 ]
