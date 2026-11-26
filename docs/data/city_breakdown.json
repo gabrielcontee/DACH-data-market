@@ -2,40 +2,40 @@
  {
   "country": "at",
   "city": "wien",
-  "n_postings": 46,
-  "avg_age_days": 83.5,
-  "pct_english": 41.3,
-  "pct_agency": 4.3
+  "n_postings": 45,
+  "avg_age_days": 84.0,
+  "pct_english": 40.0,
+  "pct_agency": 4.4
  },
  {
   "country": "at",
   "city": "unknown",
-  "n_postings": 35,
-  "avg_age_days": 67.2,
-  "pct_english": 65.7,
+  "n_postings": 34,
+  "avg_age_days": 68.9,
+  "pct_english": 64.7,
   "pct_agency": 2.9
- },
- {
-  "country": "at",
-  "city": "linz",
-  "n_postings": 6,
-  "avg_age_days": 17.2,
-  "pct_english": 0.0,
-  "pct_agency": 16.7
  },
  {
   "country": "at",
   "city": "salzburg",
   "n_postings": 6,
-  "avg_age_days": 6.0,
+  "avg_age_days": 7.7,
   "pct_english": 16.7,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "linz",
+  "n_postings": 5,
+  "avg_age_days": 19.8,
+  "pct_english": 0.0,
   "pct_agency": 0.0
  },
  {
   "country": "at",
   "city": "graz",
   "n_postings": 3,
-  "avg_age_days": 61.0,
+  "avg_age_days": 62.0,
   "pct_english": 0.0,
   "pct_agency": 33.3
  },
@@ -43,7 +43,7 @@
   "country": "at",
   "city": "innsbruck",
   "n_postings": 3,
-  "avg_age_days": 42.0,
+  "avg_age_days": 43.0,
   "pct_english": 33.3,
   "pct_agency": 0.0
  },
@@ -51,7 +51,7 @@
   "country": "at",
   "city": "schwaz",
   "n_postings": 1,
-  "avg_age_days": 119.0,
+  "avg_age_days": 120.0,
   "pct_english": 0.0,
   "pct_agency": 100.0
  },
@@ -59,7 +59,7 @@
   "country": "at",
   "city": "wels",
   "n_postings": 1,
-  "avg_age_days": 35.0,
+  "avg_age_days": 36.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -67,7 +67,7 @@
   "country": "at",
   "city": "grieskirchen",
   "n_postings": 1,
-  "avg_age_days": 9.0,
+  "avg_age_days": 10.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -75,7 +75,7 @@
   "country": "at",
   "city": "sankt johann im pongau",
   "n_postings": 1,
-  "avg_age_days": 6.0,
+  "avg_age_days": 7.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -83,7 +83,7 @@
   "country": "at",
   "city": "klagenfurt",
   "n_postings": 1,
-  "avg_age_days": 3.0,
+  "avg_age_days": 4.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  }

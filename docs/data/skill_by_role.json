@@ -6,8 +6,8 @@
   "n_postings": 26,
   "role_postings": 26,
   "pct_role_postings": 100.0,
-  "avg_age_days": 58.0,
-  "snapshot_date": "2026-11-25T00:00:00.000"
+  "avg_age_days": 59.0,
+  "snapshot_date": "2026-11-26T00:00:00.000"
  },
  {
   "role_family": "java backend",
@@ -16,8 +16,8 @@
   "n_postings": 4,
   "role_postings": 26,
   "pct_role_postings": 15.4,
-  "avg_age_days": 85.2,
-  "snapshot_date": "2026-11-25T00:00:00.000"
+  "avg_age_days": 86.2,
+  "snapshot_date": "2026-11-26T00:00:00.000"
  },
  {
   "role_family": "java backend",
@@ -26,7 +26,7 @@
   "n_postings": 3,
   "role_postings": 26,
   "pct_role_postings": 11.5,
-  "avg_age_days": 11.0,
-  "snapshot_date": "2026-11-25T00:00:00.000"
+  "avg_age_days": 12.0,
+  "snapshot_date": "2026-11-26T00:00:00.000"
  }
 ]
