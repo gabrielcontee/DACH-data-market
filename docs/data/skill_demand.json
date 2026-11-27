@@ -2,161 +2,161 @@
  {
   "skill": "java",
   "skill_category": "language",
-  "n_postings": 30,
-  "pct_postings": 29.7,
-  "avg_age_days": 67.5,
-  "snapshot_date": "2026-11-26T00:00:00.000"
- },
- {
-  "skill": "llm",
-  "skill_category": "genai",
-  "n_postings": 7,
-  "pct_postings": 6.9,
-  "avg_age_days": 97.9,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "n_postings": 31,
+  "pct_postings": 30.1,
+  "avg_age_days": 66.7,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "ai_agents",
   "skill_category": "genai",
   "n_postings": 6,
-  "pct_postings": 5.9,
-  "avg_age_days": 8.8,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 5.8,
+  "avg_age_days": 9.8,
+  "snapshot_date": "2026-11-27T00:00:00.000"
+ },
+ {
+  "skill": "llm",
+  "skill_category": "genai",
+  "n_postings": 6,
+  "pct_postings": 5.8,
+  "avg_age_days": 114.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "azure",
   "skill_category": "cloud",
   "n_postings": 5,
-  "pct_postings": 5.0,
-  "avg_age_days": 158.8,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 4.9,
+  "avg_age_days": 159.8,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "genai",
   "skill_category": "genai",
   "n_postings": 5,
-  "pct_postings": 5.0,
-  "avg_age_days": 51.8,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 4.9,
+  "avg_age_days": 27.8,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "javascript",
   "skill_category": "language",
   "n_postings": 4,
-  "pct_postings": 4.0,
-  "avg_age_days": 86.2,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 3.9,
+  "avg_age_days": 87.2,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "accessibility",
   "skill_category": "mobile",
   "n_postings": 3,
-  "pct_postings": 3.0,
-  "avg_age_days": 12.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 2.9,
+  "avg_age_days": 13.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "kotlin",
   "skill_category": "language",
   "n_postings": 3,
-  "pct_postings": 3.0,
-  "avg_age_days": 158.3,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 2.9,
+  "avg_age_days": 159.3,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "python",
   "skill_category": "language",
   "n_postings": 3,
-  "pct_postings": 3.0,
-  "avg_age_days": 79.3,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 2.9,
+  "avg_age_days": 80.3,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "ios",
   "skill_category": "mobile",
   "n_postings": 2,
-  "pct_postings": 2.0,
-  "avg_age_days": 69.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 1.9,
+  "avg_age_days": 70.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "spring",
   "skill_category": "backend",
   "n_postings": 2,
-  "pct_postings": 2.0,
-  "avg_age_days": 77.5,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "pct_postings": 1.9,
+  "avg_age_days": 78.5,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "aws",
   "skill_category": "cloud",
   "n_postings": 1,
   "pct_postings": 1.0,
-  "avg_age_days": 126.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "avg_age_days": 127.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "cv",
   "skill_category": "nlp_cv",
   "n_postings": 1,
   "pct_postings": 1.0,
-  "avg_age_days": 126.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "avg_age_days": 127.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "databricks",
   "skill_category": "platform",
   "n_postings": 1,
   "pct_postings": 1.0,
-  "avg_age_days": 294.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
- },
- {
-  "skill": "kubernetes",
-  "skill_category": "devops",
-  "n_postings": 1,
-  "pct_postings": 1.0,
-  "avg_age_days": 104.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "avg_age_days": 295.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "microservices",
   "skill_category": "backend",
   "n_postings": 1,
   "pct_postings": 1.0,
-  "avg_age_days": 359.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "avg_age_days": 360.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "rag",
   "skill_category": "genai",
   "n_postings": 1,
   "pct_postings": 1.0,
-  "avg_age_days": 36.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "avg_age_days": 37.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "rest_api",
   "skill_category": "backend",
   "n_postings": 1,
   "pct_postings": 1.0,
-  "avg_age_days": 14.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "avg_age_days": 15.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "sap",
   "skill_category": "enterprise",
   "n_postings": 1,
   "pct_postings": 1.0,
-  "avg_age_days": 18.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "avg_age_days": 19.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  },
  {
   "skill": "sql",
   "skill_category": "language",
   "n_postings": 1,
   "pct_postings": 1.0,
-  "avg_age_days": 288.0,
-  "snapshot_date": "2026-11-26T00:00:00.000"
+  "avg_age_days": 289.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
+ },
+ {
+  "skill": "vertexai",
+  "skill_category": "mlops",
+  "n_postings": 1,
+  "pct_postings": 1.0,
+  "avg_age_days": 19.0,
+  "snapshot_date": "2026-11-27T00:00:00.000"
  }
 ]

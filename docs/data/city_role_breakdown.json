@@ -4,17 +4,17 @@
   "city": "wien",
   "role_family": "java backend",
   "n_postings": 18,
-  "avg_age_days": 73.8,
+  "avg_age_days": 74.8,
   "pct_english": 22.2,
   "pct_agency": 5.6
  },
  {
   "country": "at",
   "city": "wien",
-  "role_family": "ai engineer",
+  "role_family": "ml engineer",
   "n_postings": 8,
-  "avg_age_days": 44.9,
-  "pct_english": 50.0,
+  "avg_age_days": 121.2,
+  "pct_english": 75.0,
   "pct_agency": 0.0
  },
  {
@@ -22,25 +22,34 @@
   "city": "unknown",
   "role_family": "ai engineer",
   "n_postings": 7,
-  "avg_age_days": 64.3,
+  "avg_age_days": 65.3,
   "pct_english": 71.4,
   "pct_agency": 0.0
  },
  {
   "country": "at",
   "city": "wien",
-  "role_family": "ml engineer",
-  "n_postings": 6,
-  "avg_age_days": 160.3,
-  "pct_english": 66.7,
+  "role_family": "ai engineer",
+  "n_postings": 7,
+  "avg_age_days": 46.6,
+  "pct_english": 57.1,
   "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "unknown",
+  "role_family": "kotlin / spring backend",
+  "n_postings": 5,
+  "avg_age_days": 98.8,
+  "pct_english": 100.0,
+  "pct_agency": 20.0
  },
  {
   "country": "at",
   "city": "wien",
   "role_family": "genai / llm",
   "n_postings": 5,
-  "avg_age_days": 29.8,
+  "avg_age_days": 30.8,
   "pct_english": 40.0,
   "pct_agency": 0.0
  },
@@ -49,25 +58,25 @@
   "city": "unknown",
   "role_family": "ai consultant",
   "n_postings": 5,
-  "avg_age_days": 13.0,
+  "avg_age_days": 14.0,
   "pct_english": 40.0,
   "pct_agency": 0.0
  },
  {
   "country": "at",
-  "city": "unknown",
-  "role_family": "kotlin / spring backend",
+  "city": "wien",
+  "role_family": "ai consultant",
   "n_postings": 4,
-  "avg_age_days": 120.8,
-  "pct_english": 100.0,
+  "avg_age_days": 111.2,
+  "pct_english": 25.0,
   "pct_agency": 25.0
  },
  {
   "country": "at",
   "city": "unknown",
-  "role_family": "genai / llm",
+  "role_family": "java backend",
   "n_postings": 4,
-  "avg_age_days": 44.2,
+  "avg_age_days": 48.2,
   "pct_english": 25.0,
   "pct_agency": 0.0
  },
@@ -76,43 +85,7 @@
   "city": "unknown",
   "role_family": "mobile engineer",
   "n_postings": 4,
-  "avg_age_days": 112.8,
-  "pct_english": 100.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "wien",
-  "role_family": "ai consultant",
-  "n_postings": 3,
-  "avg_age_days": 147.0,
-  "pct_english": 33.3,
-  "pct_agency": 33.3
- },
- {
-  "country": "at",
-  "city": "unknown",
-  "role_family": "mlops",
-  "n_postings": 3,
-  "avg_age_days": 90.0,
-  "pct_english": 66.7,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "unknown",
-  "role_family": "java backend",
-  "n_postings": 3,
-  "avg_age_days": 57.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "unknown",
-  "role_family": "ml engineer",
-  "n_postings": 3,
-  "avg_age_days": 46.3,
+  "avg_age_days": 113.8,
   "pct_english": 100.0,
   "pct_agency": 0.0
  },
@@ -121,8 +94,17 @@
   "city": "wien",
   "role_family": "kotlin / spring backend",
   "n_postings": 3,
-  "avg_age_days": 52.0,
+  "avg_age_days": 53.0,
   "pct_english": 66.7,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "unknown",
+  "role_family": "genai / llm",
+  "n_postings": 3,
+  "avg_age_days": 9.7,
+  "pct_english": 33.3,
   "pct_agency": 0.0
  },
  {
@@ -130,8 +112,26 @@
   "city": "salzburg",
   "role_family": "java backend",
   "n_postings": 3,
-  "avg_age_days": 8.0,
+  "avg_age_days": 9.0,
   "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "unknown",
+  "role_family": "mlops",
+  "n_postings": 2,
+  "avg_age_days": 84.0,
+  "pct_english": 100.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "unknown",
+  "role_family": "ml engineer",
+  "n_postings": 2,
+  "avg_age_days": 67.0,
+  "pct_english": 100.0,
   "pct_agency": 0.0
  },
  {
@@ -139,16 +139,25 @@
   "city": "innsbruck",
   "role_family": "kotlin / spring backend",
   "n_postings": 2,
-  "avg_age_days": 61.5,
+  "avg_age_days": 62.5,
   "pct_english": 50.0,
   "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "graz",
+  "role_family": "genai / llm",
+  "n_postings": 2,
+  "avg_age_days": 15.5,
+  "pct_english": 50.0,
+  "pct_agency": 50.0
  },
  {
   "country": "at",
   "city": "wien",
   "role_family": "mlops",
   "n_postings": 1,
-  "avg_age_days": 300.0,
+  "avg_age_days": 301.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -157,7 +166,7 @@
   "city": "graz",
   "role_family": "mobile engineer",
   "n_postings": 1,
-  "avg_age_days": 142.0,
+  "avg_age_days": 143.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -166,7 +175,7 @@
   "city": "unknown",
   "role_family": "ios engineer",
   "n_postings": 1,
-  "avg_age_days": 137.0,
+  "avg_age_days": 138.0,
   "pct_english": 100.0,
   "pct_agency": 0.0
  },
@@ -175,7 +184,7 @@
   "city": "schwaz",
   "role_family": "ai consultant",
   "n_postings": 1,
-  "avg_age_days": 120.0,
+  "avg_age_days": 121.0,
   "pct_english": 0.0,
   "pct_agency": 100.0
  },
@@ -184,7 +193,7 @@
   "city": "wien",
   "role_family": "mobile engineer",
   "n_postings": 1,
-  "avg_age_days": 85.0,
+  "avg_age_days": 86.0,
   "pct_english": 100.0,
   "pct_agency": 0.0
  },
@@ -193,7 +202,7 @@
   "city": "linz",
   "role_family": "ai research",
   "n_postings": 1,
-  "avg_age_days": 76.0,
+  "avg_age_days": 77.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -202,7 +211,7 @@
   "city": "graz",
   "role_family": "ai engineer",
   "n_postings": 1,
-  "avg_age_days": 41.0,
+  "avg_age_days": 42.0,
   "pct_english": 0.0,
   "pct_agency": 100.0
  },
@@ -211,7 +220,7 @@
   "city": "wels",
   "role_family": "ai engineer",
   "n_postings": 1,
-  "avg_age_days": 36.0,
+  "avg_age_days": 37.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -220,7 +229,7 @@
   "city": "linz",
   "role_family": "ai consultant",
   "n_postings": 1,
-  "avg_age_days": 14.0,
+  "avg_age_days": 15.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -229,7 +238,7 @@
   "city": "salzburg",
   "role_family": "ai engineer",
   "n_postings": 1,
-  "avg_age_days": 11.0,
+  "avg_age_days": 12.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -238,7 +247,7 @@
   "city": "grieskirchen",
   "role_family": "ai engineer",
   "n_postings": 1,
-  "avg_age_days": 10.0,
+  "avg_age_days": 11.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -247,7 +256,7 @@
   "city": "salzburg",
   "role_family": "ai consultant",
   "n_postings": 1,
-  "avg_age_days": 8.0,
+  "avg_age_days": 9.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -256,7 +265,7 @@
   "city": "sankt johann im pongau",
   "role_family": "ai consultant",
   "n_postings": 1,
-  "avg_age_days": 7.0,
+  "avg_age_days": 8.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -265,7 +274,7 @@
   "city": "linz",
   "role_family": "java backend",
   "n_postings": 1,
-  "avg_age_days": 7.0,
+  "avg_age_days": 8.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -274,25 +283,7 @@
   "city": "innsbruck",
   "role_family": "ai consultant",
   "n_postings": 1,
-  "avg_age_days": 6.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "klagenfurt",
-  "role_family": "java backend",
-  "n_postings": 1,
-  "avg_age_days": 4.0,
-  "pct_english": 0.0,
-  "pct_agency": 0.0
- },
- {
-  "country": "at",
-  "city": "graz",
-  "role_family": "genai / llm",
-  "n_postings": 1,
-  "avg_age_days": 3.0,
+  "avg_age_days": 7.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -301,7 +292,7 @@
   "city": "salzburg",
   "role_family": "genai / llm",
   "n_postings": 1,
-  "avg_age_days": 3.0,
+  "avg_age_days": 4.0,
   "pct_english": 100.0,
   "pct_agency": 0.0
  },
@@ -310,7 +301,7 @@
   "city": "linz",
   "role_family": "ai engineer",
   "n_postings": 1,
-  "avg_age_days": 1.0,
+  "avg_age_days": 2.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  },
@@ -319,7 +310,16 @@
   "city": "linz",
   "role_family": "ios engineer",
   "n_postings": 1,
-  "avg_age_days": 1.0,
+  "avg_age_days": 2.0,
+  "pct_english": 0.0,
+  "pct_agency": 0.0
+ },
+ {
+  "country": "at",
+  "city": "klagenfurt",
+  "role_family": "java backend",
+  "n_postings": 1,
+  "avg_age_days": 0.0,
   "pct_english": 0.0,
   "pct_agency": 0.0
  }
